@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <h4>01-5186024</h4>
-  <h4>info@sajilosewa</h4>
-  <a href="#"><h4>Login/Register</h4></a>
+  <title>Sajilo marmar Sewa</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #f4f4f4 !important;
+      color: #f15b28 !important;
+      padding: 1% 0;
+      font-size: 1.2em;
+      border:0 !important;
+      padding-left: 100px;
+      padding-right: 50px;
+    }
+    .navbar-brand{
+      float: left;
+      min-height: 55px;
+      padding: 0 15px 3px !important ;
+      padding-left: 100px;
+      padding-right: 50px;
+    }
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+      color: #f15b28;
+      background: #f4f4f4;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: black;
+    }
+  </style>
 </head>
 
 <body>
-<div class='Navbar'>
-  <ul>
-    <li> Home </li>
-    <li> Blogs </li>
-    <li>Become A proffetional </li>
-    <li>My bookings </li>
-    <li>Price</li>
-  </ul>
-</div>
-<div class= 'SMS pic'>
-  <form>
-    <input type="search" id="brand-filter" placeholder="Search our services here.... eg plumbing" name="brands" list="brands-list"  required />
-    <label for="brand-filter" data-icon="&#128269;"></label>
-    <datalist id="brands-list">
-      <option value="Plumbing" />
-      <option value="Computer" />
-      <option value="Computer maintinance" />
-      <option value="Electrical" />
-      <option value="Networking" />
-      <option value="Applicances" />
-      <option value="Painting" />
-      <option value="Aluminum" />
-      </datalist>
-    </form>
-</div>
-<div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class= "nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Become A Professional</a></li>
+          <li><a href="#">Price</a></li>
+            <li><a href="#">Blog</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="slider" class="clearfix" style="height: 450px; background: url('http://sajilosewa.com/wp-content/uploads/2017/12/hero-image.jpg') center center no-repeat; background-size: cover;">
 
-</div class = 'Our services'>
-<h1> Our Services </h1>
 
 </body>
 </html>
