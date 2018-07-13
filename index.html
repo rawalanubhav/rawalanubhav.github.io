@@ -4,11 +4,11 @@
   <title>Sajilo Marmat Sewa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ext/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="ext/js/bootstrap.min.js"></script>
   <style>
     .navbar{
       margin-bottom: 0;
@@ -43,14 +43,42 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-light fixed-top navbar-expand-md navbar-no-bg">
+    <div class="container">
+         <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#top-content">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Become A Professional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Login/Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!--nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -61,7 +89,7 @@
             <li><a href="#">Blog</a></li>
       </div>
     </div>
-  </nav>
+  </nav-->
   <section id="slider" class="clearfix" style="height: 450px; background: url('http://sajilosewa.com/wp-content/uploads/2017/12/hero-image.jpg') center center no-repeat; background-size: cover;">
   <input _ngcontent-c12 aria-autocomplete="list" autocomplete="off" class="search-input category mat-input-element mat-form-field-autofill-control ng-pristine ng-valid ng-touched" matinput placeholder="Search for a service?" role= "combobox" aria-expanded= "true" aria-owns= "mat-autocomplete-1" id="mat-input-1" aria-invalid="false">
 
