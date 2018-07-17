@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../ext/main.css">
+    <link rel="stylesheet" type="text/css" href="../ext/schedule.css">
   </head>
+
   <body>
     <nav class="navbar navbar-light fixed-top navbar-expand-md">
       <div class="container">
@@ -102,12 +104,72 @@
                     
                       <!-- Modal Header -->
                       <div class="modal-header">
-                        <h4 class="modal-title">Schedule Your Service</h4>
+                        <h4 class="modal-title">Choose Service Category</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       
                       <!-- Modal body -->
                       <div class="modal-body">
+                        <style type="text/css">
+                          input[type=radio]{
+                          width: 25px;
+                          height: 25px;
+                          }
+                        </style>
+                        <div class="tech">
+                          <div class= "container" style="text-align: left;">
+
+                            <div class="row">
+                              <div class="form-check">
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                                <label class="form-check-label" for="materialUnchecked" style= "font-size: 1.5em; padding-left:60px; "> Minor Electrical Repair</label>
+                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
+                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works .</p>
+                              </div>
+                            </div>
+                            
+                            <div class="row">
+                              <div class="form-check" style="width: 1160px;"> 
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
+                                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">Critical Repairs </label>
+                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
+                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others</p>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-check">
+                              <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                              <label class="form-check-label" for="materialUnchecked" style= " font-size: 1.5em; padding-left: 65px;"> New Electrical Installations</label>
+                              <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
+                              <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs,  .</p>
+                              </div>
+                            </div>
+
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal2">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="myModal2">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Schedule Your Service</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" style="width: 797px; height: 452px;">
                         <div class="upload">
                           <div class "container">
 
@@ -149,12 +211,13 @@
                       
                       <!-- Modal footer -->
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal2">Next</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal3">Next</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="myModal2">
+
+                <div class="modal fade" id="myModal3">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                     
@@ -165,16 +228,16 @@
                       </div>
                       
                       <!-- Modal body -->
-                      <div class="modal-body">
+                      <div class="modal-body" style="width: 797px; height: 452px;">
                         <div class "container">
                           
-                          <div class="row">
+                          <div class="row" id="row1">
                             <div class="col-md-3">
                               <h5>Date</h5>
                             </div>
                             <div class="col-md-6">
                               <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/ placeholder="MM/DD/YYYY">
                                 <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                 </div>
@@ -182,14 +245,14 @@
                             </div>
                           </div>
 
-                          <div class="row">
+                          <div class="row" id="row2">
                             <div class="col-md-3">
                               <h5>Time</h5>
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group">
                                 <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="HH:MM">
                                   <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
                                   </div>
@@ -198,7 +261,7 @@
                             </div>
                           </div>
 
-                          <div class="row">
+                          <div class="row" id="row3">
                             <div class="col-md-3">
                               <h5>Location</h5>
                             </div>
