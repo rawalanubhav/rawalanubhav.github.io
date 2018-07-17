@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../ext/main.css">
+    <link rel="stylesheet" type="text/css" href="../ext/schedule.css">
+    <link rel="stylesheet" type="text/css" href="../ext/ordersummary.css">
   </head>
+
   <body>
     <nav class="navbar navbar-light fixed-top navbar-expand-md">
       <div class="container">
@@ -102,90 +105,199 @@
                     
                       <!-- Modal Header -->
                       <div class="modal-header">
-                        <h4 class="modal-title">Schedule Your Service</h4>
+                        <h4 class="modal-title">Choose Service Category</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       
                       <!-- Modal body -->
                       <div class="modal-body">
-                        <div class "container">
-                          
-                          <div class="row">
-                            <div class="col-md-3">
-                              <h5>Date</h5>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
-                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
+                        <style type="text/css">
+                          input[type=radio]{
+                          width: 25px;
+                          height: 25px;
+                          }
+                        </style>
+                        <div class="tech">
+                          <div class= "container" style="text-align: left;">
+
+                            <div class="row">
+                              <div class="form-check">
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                                <label class="form-check-label" for="materialUnchecked" style= "font-size: 1.5em; padding-left:60px; "> Minor Electrical Repair</label>
+                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;" data-toggle="modal" data-target="#myModalrate">More Details</button>
+                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works .</p>
                               </div>
                             </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-3">
-                              <h5>Time</h5>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="form-group">
-                                <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
-                                  <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                  </div>
-                                </div>
+                            
+                            <div class="row">
+                              <div class="form-check" style="width: 1160px;"> 
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
+                                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">Critical Repairs </label>
+                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
+                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others</p>
                               </div>
                             </div>
-                          </div>
 
-                          <div class="row">
-                            <div class="col-md-3">
-                              <h5>Location</h5>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <button type="button" class="btn btn-primary">Use my currrent location <i class="material-icons">my_location</i></button>
-                                <h4>OR<h4>
-                                <div class="input-group-text"><input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress "><i class="material-icons">edit_location</i></div>
-                                <input type="text" class="form-control"  name="City" placeholder="City">
-                                <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
+                            <div class="row">
+                              <div class="form-check">
+                              <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                              <label class="form-check-label" for="materialUnchecked" style= " font-size: 1.5em; padding-left: 65px;"> New Electrical Installations</label>
+                              <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
+                              <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs,  .</p>
                               </div>
                             </div>
-                          </div>
 
+                            </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal2">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="myModalrate">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Estimated Rates</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" style="width: 798px; height: 453px;">
+                        <div class="table">
+                          <div class="container">
+                            <h2>Electrical Minor Repair </h2>
+                              <table class="table">
+                              <thead>
+                            <tr>
+                              <th>Work Details</th>
+                              <th>Cost (Rs.)</th>
+                            </tr>
+                          </thead>
+                                
+                          <tbody>
+                          <tr class="danger">
+                          <td>Power Socket</td>
+                          <td>125</td>
+                          </tr>
+                                  <tr class="success">
+                              <td>Light Point (Replace)</td>
+                              <td>200</td>
+                              </tr>      
+                            <tr class="success">
+                              <td>Switches</td>
+                              <td>300</td>
+                              </tr>
+                            <tr class="danger">
+                              <td>Gang Switch</td>
+                              <td>250</td>
+                             
+                            </tr>
+                            <tr class="info">
+                              <td>Internet Point</td>
+                              <td>130</td>
+                            </tr>
+                              </tbody>
+                          </table>
+                          </div>
                         </div>
                       </div>
                       
                       <!-- Modal footer -->
                       <div class="modal-footer">
-                        <button type="button"  data-toggle="modal" data-target="#myModal">Next</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#myModalrate">OK</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="myModal">
+
+                <div class="modal fade" id="myModal2">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Details about your Problem</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" style="width: 798px; height: 453px;">
+                        <div class="upload">
+                          <div class "container">
+
+                            <div class="row" id="com">
+                              <div class="col-md-3">
+                                <i class="fa fa-commenting" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row" style="padding: 5px 5px 35px 20px;">
+                              <div class="col-md-3">
+                                <i class="fa fa-photo" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-8" style="text-align: left;">
+                                <form action="upload.php" method="post" enctype="multipart/form-data">
+                                  <input type="file" name="file">
+                                  <button type="button" class="btn btn-primary">Upload</button>
+                                </form>
+                              </div>
+                            </div>
+
+                            <div class="row" style="padding: 15px 15px 25px 20px;">
+                              <div class="col-md-3">
+                                <i class="fa fa-microphone" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-6" style="text-align: left;">
+                                <button type="button" class="btn btn-danger">Record</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal3">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="myModal3">
                   <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                     
                       <!-- Modal Header -->
                       <div class="modal-header">
                         <h4 class="modal-title">Schedule Your Service</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="btn btn-secondary" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       
                       <!-- Modal body -->
-                      <div class="modal-body">
+                      <div class="modal-body" style="width: 798px; height: 453px;">
                         <div class "container">
                           
-                          <div class="row">
+                          <div class="row" id="row1">
                             <div class="col-md-3">
                               <h5>Date</h5>
                             </div>
                             <div class="col-md-6">
                               <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/ placeholder="MM/DD/YYYY">
                                 <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                 </div>
@@ -193,14 +305,14 @@
                             </div>
                           </div>
 
-                          <div class="row">
+                          <div class="row" id="row2">
                             <div class="col-md-3">
                               <h5>Time</h5>
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group">
                                 <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="HH:MM">
                                   <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
                                   </div>
@@ -209,7 +321,7 @@
                             </div>
                           </div>
 
-                          <div class="row">
+                          <div class="row" id="row3">
                             <div class="col-md-3">
                               <h5>Location</h5>
                             </div>
@@ -229,7 +341,88 @@
                       
                       <!-- Modal footer -->
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Next</button>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal4">Next</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="myModal4">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Order Summary</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" style="width: 798px; height: 453px;">
+                        <div class="table">
+                          <div class="container">
+                            <h2>Your Booking Details</h2>
+                              <table class="table">
+                                
+                          <tbody>
+                          <tr>
+                          <td>Order Number</td>
+                          <td>1234</td>
+                          </tr>
+                                  <tr>
+                              <td>Service</td>
+                              <td>Electrical Minor</td>
+                              </tr>      
+                            <tr class="success">
+                              <td>Date</td>
+                              <td>2nd July, 2018</td>
+                              </tr>
+                            <tr class="danger">
+                              <td>Time</td>
+                              <td>11:00 AM</td>
+                             
+                            </tr>
+                            <tr class="info">
+                              <td>Location</td>
+                              <td>Himalaya Hotel, Kupondole</td>
+                            </tr>
+                                </tbody>
+                          </table>
+                          </div>
+                        </div>
+                        <p style="color: red">
+                          Note: The cost estimation and technician details witll be sent with an hour.
+                        </p>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Confirm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="myModal5">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Order Conformation</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                      <!-- Modal body -->
+                      <div class="modal-body" style="width: 798px; height: 453px;">
+                        <p>
+                        Your Order has been confirmed. Please confirm your order number <strong style="color: blue;">"008257"</strong> with technician for the verification.
+                        </p>
+                      </div>
+                      
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">OK</button>
                       </div>
                     </div>
                   </div>

@@ -11,6 +11,9 @@ $(".navbar a").click(function(){
 //    zIndex: 2048,
 //  });
 // });
+function click1() {
+    alert("Your Order has been confirmed. Please confirm your order number "008257" with technician for the verification.");
+}
 
 $(function () {
   $('#datetimepicker3').datetimepicker({
@@ -23,3 +26,4 @@ $(function () {
     format: 'L'
   });
 });
+
