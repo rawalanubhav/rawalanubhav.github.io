@@ -1,6 +1,7 @@
 body{
   /*background-color:#efefef;*/
   -webkit-font-smoothing: antialiased;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .navbar{
