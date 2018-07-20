@@ -1,3 +1,5 @@
+var status = "less";
+
 $(".navbar a").click(function(){
   $("body,html").animate({
    scrollTop:$("#" + $(this).data('value')).offset().top
@@ -27,3 +29,13 @@ function rld(){
   location.reload();
 }
 
+
+function name_col(){
+    if (status=="less"){
+        document.getElementById("nam_but").innerText = "Less Details";
+        status ="more";
+    }else if(status == "more"){
+        document.getElementById("nam_but").innerText = "More Details";
+        status ="less";
+    }
+}

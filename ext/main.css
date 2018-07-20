@@ -109,7 +109,22 @@ input#search-bar{
   height: 75px;
   top: -62px;
   right: -15px;
+}
+
+
+#demo{
+  padding-left: 45px; 
+  font-size: 12px; 
+  color:grey;
 } 
+
+.right{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+}
+
+
 
 .services{
   background-color:#efefef;
@@ -176,8 +191,11 @@ input#search-bar{
 }
 .job-title{
   font-size: 14px;
-  margin-bottom: 44px;
+  margin-bottom: 11px;
   position: relative;
   font-family: 'Fira Sans', sans-serif;
   color: #646464;
+}
+#nam_but{
+  padding-left: 45px;
 }
