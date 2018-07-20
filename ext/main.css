@@ -150,7 +150,11 @@ input#search-bar{
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
+<<<<<<< HEAD
   /*background-color: lightblue;*/
+=======
+  cursor: url("https://cdn.emojidex.com/emoji/hdpi/(flat_head)screw_driver.png"), auto;
+>>>>>>> Anubhav
 }
 
 .thumbnail_tech{
