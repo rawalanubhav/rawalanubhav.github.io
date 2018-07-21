@@ -116,7 +116,7 @@
                       </div>
                       
                       <!-- Modal body -->
-                      <div class="modal-body">
+                      <div class="modal-body"  style="width: 798px; height: 453px;">
                         <style type="text/css">
                           input[type=radio]{
                           width: 25px;
@@ -127,14 +127,13 @@
                           <div class= "container" style="text-align: left;">
 
                             <div class="row">
-                              <div class="col-md-12">
-                              <div class="form-check">
+                              <div class="form-check" style="width: 1160px;">
                               
                                 <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
                                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">Minor Electrical Repair </label>
                                 <button type="button" class="btn btn-primary" style="position: absolute;  right: 0px; padding-right: 75px; text-align: center !important;" data-toggle="modal" data-target="#myModalrate">Price Details</button>
 
-                                <br>
+                                
                                 <div class="col-md-9">
                                   <div id="demo" class="collapse">
                                     This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works.
@@ -142,7 +141,6 @@
                                   <a data-toggle="collapse" data-target="#demo" id="nam_but" onclick="name_col();" href="javascript:void(0);">More Details</a>  
                                 </div>
                     
-                              </div>
                               </div>
                             </div>
                             
@@ -152,18 +150,30 @@
                                 
                                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">Critical Repairs </label>
                                 <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
-                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others</p>
 
+                                <div class="col-md-9">
+                                  <div id="demo1" class="collapse" style="padding-left: 45px; font-size: 12px; color:grey;">
+                                   This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others
+                                  </div>
+                                  <a data-toggle="collapse" data-target="#demo1" id="nam_but" onclick="name_col();" href="javascript:void(0);">More Details</a>  
+                                </div>
 
                               </div>
                             </div>
 
                             <div class="row">
-                              <div class="form-check">
+                              <div class="form-check" style="width: 1160px;">
                               <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
-                              <label class="form-check-label" for="materialUnchecked" style= " font-size: 1.5em; padding-left: 65px;"> New Electrical Installations</label>
+                              <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">New Electrical Installations </label>
                               <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
-                              <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs,  .</p>
+
+                              <div class="col-md-9">
+                                  <div id="demo2" class="collapse" style="padding-left: 45px; font-size: 12px; color:grey;">
+                                   This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs.
+                                  </div>
+                                  <a data-toggle="collapse" data-target="#demo2" id="nam_but" onclick="name_col();" href="javascript:void(0);">More Details</a>  
+                                </div>
+
                               </div>
                             </div>
 
@@ -533,7 +543,11 @@
 
       </div>
     </div>
-    
+    <div id="wh-widget-send-button" class=" wh-widget-right" style="width: 345px; height: 464px;">
+      <iframe id="wh-widget-send-button-iframe" src="http://whatshelp.io/widget/wSendButton?facebook=1869764829942538&amp;company_logo_url=%2F%2Fstorage.whatshelp.io%2Fwidget%2Ff1%2Ff17d%2Ff17dcd99b30ab047145148c4ddd1abf4%2F19275000_1880989438820077_1329662227361661268_n.jpg&amp;greeting_message=Hello%2C%20how%20may%20we%20help%20you%3F%20Just%20send%20us%20a%20message%20now%20to%20get%20assistance.&amp;call_to_action=Message%20us&amp;position=right&amp;ga=false&amp;branding=true&amp;mobile=true&amp;desktop=true&amp;shift_vertical=0&amp;shift_horizontal=0&amp;domain=null&amp;key=null&amp;button_color=%23ff6550&amp;parentWrapperId=wh-widget-send-button&amp;clientHostname=sajilosewa.com&amp;showHelloPopup=0&amp;isMobile=0">
+      </iframe>
+    </div>
+
 
     <script src="ext/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -544,16 +558,21 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="ext/main.js"></script>
 
+    <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
+      (function () {
+        var options = {
+          facebook: "1869764829942538", // Facebook page ID
+          call_to_action: "Message us", // Call to action
+          position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    <!-- /WhatsHelp.io widget -->
+
   </body>
-</html>
-
-
-<<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
-
-</body>
 </html>
