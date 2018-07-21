@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var navListItems = $('div.setup-panel div a'),
-            allWells = $('.setup-content'),
-            allNextBtn = $('.nextBtn');
+    var navListItems = $('div.setup-panel div a');
+        var    allWells = $('.setup-content');
+        var    allNextBtn = $('.nextBtn');
 
     allWells.hide();
 
