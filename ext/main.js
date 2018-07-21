@@ -31,6 +31,8 @@ function rld(){
 
 
 function name_col(){
+  data = document.getElementById("nam_but").closest();
+  alert(data);
     if (status=="less"){
         document.getElementById("nam_but").innerText = "Less Details";
         status ="more";
