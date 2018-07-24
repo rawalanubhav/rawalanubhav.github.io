@@ -199,3 +199,8 @@ input#search-bar{
 #nam_but{
   padding-left: 45px;
 }
+
+#serv{
+  height: 100px;
+  width: 100px;
+}
