@@ -68,6 +68,10 @@ body{
   position: relative;
 }
 
+.jumbotron .container h1{
+  color: white;
+}
+
 .search-container{
   width: 490px;
   display: block;
