@@ -68,10 +68,6 @@ body{
   position: relative;
 }
 
-.jumbotron .container h1{
-  color: white;
-}
-
 .search-container{
   width: 490px;
   display: block;
@@ -166,9 +162,9 @@ input#search-bar{
 }
 
 .thumbnail:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
   /*background-color: lightblue;*/
   cursor: url("https://cdn.emojidex.com/emoji/hdpi/(flat_head)screw_driver.png"), auto;
 }
@@ -202,9 +198,4 @@ input#search-bar{
 }
 #nam_but{
   padding-left: 45px;
-}
-
-#serv{
-  height: 100px;
-  width: 100px;
 }

@@ -42,7 +42,7 @@
                       <a class="nav-link scroll-link" href="#">Price</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Blog</a>
+                      <a class="nav-link scroll-link" href="pg_extra/index.html">My Bookings</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link scroll-link" href="#">Login/Register</a>
@@ -54,6 +54,7 @@
 
     <div class="jumbotron">
       <div class="container">
+        <h1>Your Service Expert</h1>
         <form class="search-container">
           <input type="text" id="search-bar" placeholder="Search for our services eg. plumbing">
           <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
@@ -67,30 +68,34 @@
         <div class="row">
           <div class="col-md-3">
             <div class="thumbnail" id="ic-boc">
-              <img src="img/elec.png">
-              <h5>Carperntry</h5>
+              <img src="img/elec.png"id="serv">
+              <h6>Appliance</h6>
             </div>
             <div class="thumbnail" id="ic-boc">
-              <img src="img/plumb.png">
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="thumbnail" id="ic-boc">
-              <img src="img/comp.png">
-            </div>
-            <div class="thumbnail" id="ic-boc">
-              <img src="img/paint.png">
+              <img src="img/plumb.png"id="serv">
+              <h6>Plumbing</h6>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="thumbnail" id="ic-boc">
-              <img src="img/carp.png">
-              <h5>Carpenting</h5>
+              <img src="img/comp.png"id="serv">
+              <h6>Computer</h6>
             </div>
             <div class="thumbnail" id="ic-boc">
-              <img src="img/comp_net.png">
+              <img src="img/paint.png"id="serv">
+              <h6>Painting</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/carp.png" id="serv">
+              <h6>Carpentry</h6>
+            </div>
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/comp_net.png" id="serv">
+              <h6>Network</h6>
             </div>
           </div>
 
@@ -101,347 +106,20 @@
                <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                   Open modal
                 </button>-->
-                <div class="thumbnail" id="ic-boc">          
-                <a href="#"><img data-toggle="modal" data-target="#myModal" src="img/elect.png"></a>
-                </div>
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Choose Service Category</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                        <style type="text/css">
-                          input[type=radio]{
-                          width: 25px;
-                          height: 25px;
-                          }
-                        </style>
-                        <div class="tech">
-                          <div class= "container" style="text-align: left;">
-
-                            <div class="row">
-                              <div class="form-check">
-                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
-                                <label class="form-check-label" for="materialUnchecked" style= "font-size: 1.5em; padding-left:60px; "> Minor Electrical Repair</label>
-                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;" data-toggle="modal" data-target="#myModalrate">More Details</button>
-                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works .</p>
-                              </div>
-                            </div>
-                            
-                            <div class="row">
-                              <div class="form-check" style="width: 1160px;"> 
-                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
-                                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 60px;">Critical Repairs </label>
-                                <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
-                                <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others</p>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="form-check">
-                              <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
-                              <label class="form-check-label" for="materialUnchecked" style= " font-size: 1.5em; padding-left: 65px;"> New Electrical Installations</label>
-                              <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">More Details</button>
-                              <p style="padding-left: 65px; font-size: 20px; color:grey;"> This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs,  .</p>
-                              </div>
-                            </div>
-
-                            </div>
-                          </div>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal2">Next</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="myModalrate">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Estimated Rates</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body" style="width: 798px; height: 453px;">
-                        <div class="table">
-                          <div class="container">
-                            <h2>Electrical Minor Repair </h2>
-                              <table class="table">
-                              <thead>
-                            <tr>
-                              <th>Work Details</th>
-                              <th>Cost (Rs.)</th>
-                            </tr>
-                          </thead>
-                                
-                          <tbody>
-                          <tr class="danger">
-                          <td>Power Socket</td>
-                          <td>125</td>
-                          </tr>
-                                  <tr class="success">
-                              <td>Light Point (Replace)</td>
-                              <td>200</td>
-                              </tr>      
-                            <tr class="success">
-                              <td>Switches</td>
-                              <td>300</td>
-                              </tr>
-                            <tr class="danger">
-                              <td>Gang Switch</td>
-                              <td>250</td>
-                             
-                            </tr>
-                            <tr class="info">
-                              <td>Internet Point</td>
-                              <td>130</td>
-                            </tr>
-                              </tbody>
-                          </table>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#myModalrate">OK</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="myModal2">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Details about your Problem</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body" style="width: 798px; height: 453px;">
-                        <div class="upload">
-                          <div class "container">
-
-                            <div class="row" id="com">
-                              <div class="col-md-3">
-                                <i class="fa fa-commenting" style="font-size: 100px"></i>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row" style="padding: 5px 5px 35px 20px;">
-                              <div class="col-md-3">
-                                <i class="fa fa-photo" style="font-size: 100px"></i>
-                              </div>
-                              <div class="col-md-8" style="text-align: left;">
-                                <form action="upload.php" method="post" enctype="multipart/form-data">
-                                  <input type="file" name="file">
-                                  <button type="button" class="btn btn-primary">Upload</button>
-                                </form>
-                              </div>
-                            </div>
-
-                            <div class="row" style="padding: 15px 15px 25px 20px;">
-                              <div class="col-md-3">
-                                <i class="fa fa-microphone" style="font-size: 100px"></i>
-                              </div>
-                              <div class="col-md-6" style="text-align: left;">
-                                <button type="button" class="btn btn-danger">Record</button>
-                              </div>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal3">Next</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="myModal3">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Schedule Your Service</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body" style="width: 798px; height: 453px;">
-                        <div class "container">
-                          
-                          <div class="row" id="row1">
-                            <div class="col-md-3">
-                              <h5>Date</h5>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/ placeholder="MM/DD/YYYY">
-                                <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row" id="row2">
-                            <div class="col-md-3">
-                              <h5>Time</h5>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="form-group">
-                                <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="HH:MM">
-                                  <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row" id="row3">
-                            <div class="col-md-3">
-                              <h5>Location</h5>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <button type="button" class="btn btn-primary">Use my currrent location <i class="material-icons">my_location</i></button>
-                                <h4>OR</h4>
-                                <div class="input-group-text"><input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress "><i class="material-icons">edit_location</i></div>
-                                <input type="text" class="form-control"  name="City" placeholder="City">
-                                <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal4">Next</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="myModal4">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Order Summary</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body" style="width: 798px; height: 453px;">
-                        <div class="table">
-                          <div class="container">
-                            <h2>Your Booking Details</h2>
-                              <table class="table">
-                                
-                          <tbody>
-                          <tr>
-                          <td>Order Number</td>
-                          <td>1234</td>
-                          </tr>
-                                  <tr>
-                              <td>Service</td>
-                              <td>Electrical Minor</td>
-                              </tr>      
-                            <tr class="success">
-                              <td>Date</td>
-                              <td>2nd July, 2018</td>
-                              </tr>
-                            <tr class="danger">
-                              <td>Time</td>
-                              <td>11:00 AM</td>
-                             
-                            </tr>
-                            <tr class="info">
-                              <td>Location</td>
-                              <td>Himalaya Hotel, Kupondole</td>
-                            </tr>
-                                </tbody>
-                          </table>
-                          </div>
-                        </div>
-                        <p style="color: red">
-                          Note: The cost estimation and technician details witll be sent with an hour.
-                        </p>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Confirm</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="modal fade" id="myModal5">
-                  <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Order Conformation</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body" style="width: 798px; height: 453px;">
-                        <p>
-                        Your Order has been confirmed. Please confirm your order number <strong style="color: blue;">"008257"</strong> with technician for the verification.
-                        </p>
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button onclick="rld()" type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">OK</button>
-                      </div>
-                    </div>
-                  </div>
+                <div class="thumbnail" id="ic-boc">
+                <a href="order.html"><img data-toggle="modal" data-target="#myModal" src="img/elect.png" id="serv"></a>
+                <h6>Electrical</h6>
                 </div>
 
               </div>
 
             <!-- </div> -->
             <div class="thumbnail" id="ic-boc">
-              <img src="img/Alumin.png">
+              <img src="img/Alumin.png" id="serv">
+              <h6>Aluminum</h6>
             </div>
           </div>
-            
+
         </div>
       </div>
     </div>
@@ -451,24 +129,23 @@
         <h2> Top Rated Technician</h2>
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4" style="text-align: center;">
             <div class="thumbnail_tech" >
               <div class="tech_img">
                 <img src="img/plum_p.jpg" class="img-circle">
               </div>
 
               <div class="name-tech">
-                <p class="name">Shyam Krishna</p>
+                <p class="name">Janak Thapa</p>
                 <p class="job-title"> Plumbing Expert </p>
               </div>
 
-              <p> 
-                Average Rating:
+              <p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span> 
+                <span class="fa fa-star checked"></span>
               </p>
               <button type="button" class="btn btn-info">View Profile</button>
             </div>
@@ -481,17 +158,16 @@
               </div>
 
               <div class="name-tech">
-                <p class="name">Shyam Krishna</p>
+                <p class="name">Shambhu Adhakari</p>
                 <p class="job-title"> Computer Expert </p>
               </div>
 
-              <p> 
-                Average Rating:
+              <p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span> 
+                <span class="fa fa-star checked"></span>
               </p>
               <button type="button" class="btn btn-info">View Profile</button>
             </div>
@@ -507,22 +183,25 @@
                 <p class="name">Shyam Krishna</p>
                 <p class="job-title"> Electric Expert </p>
               </div>
-              <p> 
-                Average Rating:
+              <p>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span> 
+                <span class="fa fa-star checked"></span>
               </p>
-              <a href="Sujeet/Technician.html"><button type="button" class="btn btn-info">View Profile</button></a>
+              <a href="pg_extra/user_profile/index.html"><button type="button" class="btn btn-info">View Profile</button></a>
             </div>
           </div>
          </div>
 
       </div>
     </div>
-    
+    <!-- <div id="wh-widget-send-button" class=" wh-widget-right" style="width: 345px; height: 464px;">
+      <iframe id="wh-widget-send-button-iframe" src="http://whatshelp.io/widget/wSendButton?facebook=1869764829942538&amp;company_logo_url=%2F%2Fstorage.whatshelp.io%2Fwidget%2Ff1%2Ff17d%2Ff17dcd99b30ab047145148c4ddd1abf4%2F19275000_1880989438820077_1329662227361661268_n.jpg&amp;greeting_message=Hello%2C%20how%20may%20we%20help%20you%3F%20Just%20send%20us%20a%20message%20now%20to%20get%20assistance.&amp;call_to_action=Message%20us&amp;position=right&amp;ga=false&amp;branding=true&amp;mobile=true&amp;desktop=true&amp;shift_vertical=0&amp;shift_horizontal=0&amp;domain=null&amp;key=null&amp;button_color=%23ff6550&amp;parentWrapperId=wh-widget-send-button&amp;clientHostname=sajilosewa.com&amp;showHelloPopup=0&amp;isMobile=0">
+      </iframe>
+    </div> -->
+
 
     <script src="ext/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -532,6 +211,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="ext/main.js"></script>
-
+<!--
+    <script type="text/javascript">
+      (function () {
+        var options = {
+          facebook: "1869764829942538", // Facebook page ID
+          call_to_action: "Message us", // Call to action
+          position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    -->
   </body>
 </html>

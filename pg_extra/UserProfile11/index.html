@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+  <body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="sms_logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="active">
+              <a class="nav-link scroll-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#">Become A Professional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#">Price</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav bar End-->
+    <div class="container-">
+      <div class="row ">
+    <div class="col-sm-3 sidenav profile-sidebar">
+
+    				<!-- SIDEBAR USERPIC -->
+    				<div class="profile-userpic">
+    					<img src="elec_p.jpg" class="img-responsive mx-auto d-block" alt="">
+    				</div>
+    				<!-- END SIDEBAR USERPIC -->
+    				<!-- SIDEBAR USER TITLE -->
+    				<div class="profile-usertitle">
+    					<div class="profile-usertitle-name">
+    						Kusal Tamrakar
+    					</div>
+    					<div class="profile-usertitle-job">
+    						Electrician
+    					</div>
+    				</div>
+    				<!-- END SIDEBAR USER TITLE -->
+    				<!-- SIDEBAR BUTTONS -->
+    				<div class="profile-userbuttons">
+    					<button type="button" class="btn btn-success btn-sm">Book Now</button>
+
+    				</div>
+            <ul class="nav flex-column">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a></li>
+            </ul>
+
+    </div>
+
+
+  </body>
+</head>
+
+</html>
