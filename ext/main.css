@@ -166,9 +166,9 @@ input#search-bar{
 }
 
 .thumbnail:hover{
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
   /*background-color: lightblue;*/
   cursor: url("https://cdn.emojidex.com/emoji/hdpi/(flat_head)screw_driver.png"), auto;
 }
