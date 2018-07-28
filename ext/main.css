@@ -148,8 +148,8 @@ input[type=text] {
   z-index: 99;
   width: 35vw;
   /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 24.3vw;
+  /*top: 100%;*/
+  left: 31.9vw;
   right: 0;
 }
 .autocomplete-items div {
@@ -179,10 +179,11 @@ input[type=text] {
 
 /*Search-bar-end */
 
-#demo{
-  padding-left: 45px; 
-  font-size: 12px; 
+.demo{
+  padding-left: 15px; 
+  font-size: 14px; 
   color:grey;
+  margin-bottom: 15px;
 } 
 
 .right{
@@ -192,13 +193,12 @@ input[type=text] {
 }
 
 .services{
-  background-color: white;
-  
-  border-bottom:1px solid #dbdbdb;
+  background-color: #f9f9ff;
   text-align: center;
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  /*border-bottom:1px solid #dbdbdb;*/
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .thumbnail{
   margin: 30px; 
@@ -209,7 +209,7 @@ input[type=text] {
   text-align: center;
   margin-top: 25px;
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   text-align: center;
   /*background-image: url("https://www.appnovation.com/sites/default/files/2016-12/formbg.gif");*/
 }
@@ -247,7 +247,6 @@ input[type=text] {
 }
 .name_tech{
   margin-top: 25px;
-  
 }
 .name{
   font-size: 18px;

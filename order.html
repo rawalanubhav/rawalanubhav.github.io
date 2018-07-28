@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sajilo Marmat</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="ext/ord_css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="ext/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -18,7 +18,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <script src="https://use.fontawesome.com/6a6312675e.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="ext/ord_css/style.css">
   
 </head>
 
@@ -150,7 +150,7 @@
         <div class="panel">
             <header class="panel__header">
               <h2 class="panel__title">Select your required type of Service</h2>
-              <p class="panel__subheading">Choose at least one </p>
+              <p class="panel__subheading">Select one </p>
               <style type="text/css">
                 input[type=radio]{
                 width: 25px;
@@ -172,10 +172,10 @@
 
                       
                       <div class="col-md-9">
-                        <div id="demo" class="collapse" style="padding-left: 15px; font-size: 14px; color:grey;">
+                        <div class="demo">
                           This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works.
                         </div>
-                        <a data-toggle="collapse" data-target="#demo" id="nam_but" href="javascript:void(0);">More Details</a>  
+                    
                       </div>
           
                     </div>
@@ -189,10 +189,10 @@
                       <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
 
                       <div class="col-md-9">
-                        <div id="demo1" class="collapse" style="padding-left: 15px; font-size: 14px; color:grey;">
+                        <div class="demo">
                          This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others
                         </div>
-                        <a data-toggle="collapse" data-target="#demo1" id="nam_but2" href="javascript:void(0);">More Details</a>  
+                          
                       </div>
 
                     </div>
@@ -205,10 +205,10 @@
                     <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
 
                     <div class="col-md-9">
-                        <div id="demo2" class="collapse" style="padding-left: 15px; font-size: 14px; color:grey;">
+                        <div class="demo">
                          This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs.
                         </div>
-                        <a data-toggle="collapse" data-target="#demo2" id="nam_but1" href="javascript:void(0);">More Details</a>  
+                          
                       </div>
 
                     </div>
@@ -266,11 +266,34 @@
         <div class="panel">
            <header class="panel__header">
               <h2 class="panel__title">Schedule your Service</h2>
-              <p class="panel__subheading">Please choose one</p>
            </header>
 
             <div class "container-fluid">
               
+
+              <div class="row" id="row2">
+                <div class="col-md-3">
+                  <h5>Location</h5>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group" id="form-align">
+                    
+                    <div class="input-group date" style="width: 741px;">
+                      <input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress">
+                        <div class="input-group-text"><a href="#"><i class="material-icons">edit_location</i></a></div>
+                    </div>
+
+                    <input type="text" class="form-control"  name="City" placeholder="City">
+                    <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
+
+                    <h4 id="or-spe">OR<h4>
+
+                    <button type="button" class="btn btn-primary" id="loc">Use my currrent location <i class="material-icons">my_location</i></button>
+
+                  </div>
+                </div>
+              </div>
+
               <div class="row" id="row1">
                 <div class="col-md-3">
                   <h5>Date and Time</h5>
@@ -281,27 +304,6 @@
                     <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="row" id="row2">
-                <div class="col-md-3">
-                  <h5>Location</h5>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group" id="form-align">
-                    <button type="button" class="btn btn-primary" id="loc">Use my currrent location <i class="material-icons">my_location</i></button>
-                    <h4 >OR<h4>
-
-                    <div class="input-group date" style="width: 741px;">
-                      <input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress">
-                        <div class="input-group-text"><a href="#"><i class="material-icons">edit_location</i></a></div>
-                    </div>
-
-                    <input type="text" class="form-control"  name="City" placeholder="City">
-                    <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
                   </div>
                 </div>
               </div>
@@ -369,7 +371,7 @@
       <p>
         Your Order has been placed. Please confirm your order number <strong style="color: blue;">"008257"</strong> with technician for the verification.
       </p>
-      <a href="index.html"><button class="btn btn-primary">Return Home</button></a>
+      <a href="pg_extra/index.html"><button class="btn btn-primary">My Bookings</button></a>
     </div>
 
   </div>
@@ -446,7 +448,7 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
   <script src="ext/main.js"></script>
-  <script  src="js/index.js"></script>
+  <script  src="ext/ord_js/index.js"></script>
 
   </body>
 </html>

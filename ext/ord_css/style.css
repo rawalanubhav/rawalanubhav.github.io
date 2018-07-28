@@ -322,20 +322,12 @@ html {
   padding-left: 15px;
 }
 
-#rdo_fill{
-  padding-bottom: 30px;
-}
-
-#rdo_fillf{
-  padding-bottom: 60px;
-}
-
-
 #row1{
   padding-bottom: 30px;
 }
 #form-align{
   text-align: center;
+  margin-bottom: 25px;
 }
 #final_msg {
   text-align: center;
@@ -346,3 +338,6 @@ html {
   width: 100px;
 }
 
+#or-spe{
+  margin: 10px 0;
+}

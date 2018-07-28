@@ -160,7 +160,7 @@ var Wizard = function () {
     key: 'handleNextStepButton',
     value: function handleNextStepButton() {
       if (this.currentStep === this.stepsQuantity - 1) {
-        this.nextControl.innerHTML = 'Order!';
+        this.nextControl.innerHTML = 'Confirm Order!';
 
         this.nextControl.removeEventListener('click', this.nextControlMoveStepMethod);
         this.nextControl.addEventListener('click', this.concludeControlMoveStepMethod);
