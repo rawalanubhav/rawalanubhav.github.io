@@ -10,7 +10,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
   <link rel="stylesheet" href="ext/datepicker.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -62,14 +63,15 @@
         
         <div class="wizard__header-content">
           <h1 class="wizard__title" >Electrical Maintenance</h1>
-          <p class="wizard__subheading">Book service with <span>4</span> simple steps.</p>
+          <p class="wizard__subheading">Book service with <span>3</span> simple steps.</p>
         </div>
         
         <div class="wizard__steps">
           <nav class="steps">
           <div class="step">
             <div class="step__content">
-              <p class="step__number"><i class="fa fa-book"></i></p>
+              <p class="step__number"><i class="fas fa-hand-pointer"></i></p>
+              <p id="step_label1">Service Selection</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -88,13 +90,15 @@
             </div>
           </div>
 
-          <div class="step">
+          <!-- <div class="step">
             <div class="step__content">
-              <p class="step__number"><i class="fa fa-book"></i></p>
+              <p class="step__number"><i class="fa fa-list-alt"></i></p>
+              <p id="step_label2">More Details</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
               </svg>
+
 
               <div class="lines">
                 <div class="line -background">
@@ -104,11 +108,12 @@
                 </div>
               </div> 
             </div>
-          </div>
+          </div> -->
 
           <div class="step">
             <div class="step__content">
-              <p class="step__number"><i class="fa fa-book"></i></p>
+              <p class="step__number"><i class="fa fa-calendar"></i></p>
+              <p id="step_label2">Schedule Appointment</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -127,6 +132,7 @@
           <div class="step">
             <div class="step__content">
               <p class="step__number"><i class="fa fa-check-square-o"></i></p>
+              <p id="step_label3">Order Confirmation</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
                 <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -148,77 +154,139 @@
       
       <div class="panels">
         <div class="panel">
-            <header class="panel__header">
-              <h2 class="panel__title">Select your required type of Service</h2>
-              <p class="panel__subheading">Select one </p>
-              <style type="text/css">
-                input[type=radio]{
-                width: 25px;
-                height: 25px;
-                }
+          <header class="panel__header">
+            <h2 class="panel__title">Select your required type of Service</h2>
+            <p class="panel__subheading">Select one </p>
+            <style type="text/css">
+              input[type=radio]{
+              width: 25px;
+              height: 25px;
+              }
+              
+            </style>
+          </header>
+          
+            
+          <div class= "container" style="text-align: left; margin-left: 0px;">
+
+            <div class="row" id="rdo_fill">
+              <div class="form-check" style="width: 1170px;">
+              
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Minor Electrical Repair </label>
                 
-              </style>
+                <div class="col-md-12">
+                  <div class="demo">
+                    This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works.
+                    <br>
+                    <!-- <button type="button" id= "price_button" class="btn btn-primary" data-toggle="modal" data-target="#myModalrate">Price Details</button> -->
+                    <a data-toggle="modal" data-target="#myModalrate" href="javascript:void(0);">Price Details</a> 
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            
+            <div class="row" id="rdo_fill">
+              <div class="form-check" style="width: 1170px;"> 
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
+                
+                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Critical Repairs </label>
+
+                <div class="col-md-9">
+                  <div class="demo">
+                   This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others
+                   <br>
+                   <!-- <button type="button" id= "price_button" class="btn btn-primary"  data-toggle="modal" data-target="#myModalrate">Price Details</button> -->
+                  <a data-toggle="modal" data-target="#myModalrate" href="javascript:void(0);">Price Details</a> 
+                </div>
+                    
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="row" id="rdo_fillf">
+              <div class="form-check" style="width: 1170px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">New Electrical Installations </label>
+
+                <div class="col-md-12">
+                  <div class="demo">
+                   This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs. <br>
+                  <!--  <button type="button" id= "price_button" class="btn btn-primary"  data-toggle="modal" data-target="#myModalrate">Price Details</button> -->
+                  <a data-toggle="modal" data-target="#myModalrate" href="javascript:void(0);">Price Details</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <header class="panel__header">
+              <h2 class="panel__title">Describe Your Problem</h2>
+              <p class="panel__subheading">At least one</p>
             </header>
-          
-              <!-- <div class="tech"> -->
-                <div class= "container" style="text-align: left; margin-left: 0px;">
 
-                  <div class="row" id="rdo_fill">
-                    <div class="form-check" style="width: 1170px;">
-                    
-                      <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
-                      <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Minor Electrical Repair </label>
-                      <button type="button" class="btn btn-primary" style="position: absolute;  right: 0px; padding-right: 75px; text-align: center !important;" data-toggle="modal" data-target="#myModalrate">Price Details</button>
+            <div class="upload">
+              <div class "container-fluid">
 
-                      
-                      <div class="col-md-9">
-                        <div class="demo">
-                          This service includes all the minor electrical repair works such as replacement of damaged lights, repair power sockets, maintain electrical lines and other minor works.
-                        </div>
-                    
-                      </div>
-          
-                    </div>
+                <div class="row" style="padding: 5px 5px 35px 20px;">
+
+                  <div class="col-md-3" >
+                    <i class="fa fa-commenting" style="font-size: 60px"></i>
+                  </div>
+
+                  
+
+                  <div class="col-md-3" style="padding-left: 2vw;" >
+                    <i class="fa fa-photo" style="font-size: 60px"></i>
                   </div>
                   
-                  <div class="row" id="rdo_fill">
-                    <div class="form-check" style="width: 1170px;"> 
-                      <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
-                      
-                      <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Critical Repairs </label>
-                      <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
-
-                      <div class="col-md-9">
-                        <div class="demo">
-                         This service includes emergency breakdowns such as wiring issues, inverter line faults, voltage fluctuations and others
-                        </div>
-                          
-                      </div>
-
-                    </div>
+                  <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+                  
                   </div>
 
-                  <div class="row" id="rdo_fillf">
-                    <div class="form-check" style="width: 1170px;">
-                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
-                    <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">New Electrical Installations </label>
-                    <button type="button" class="btn btn-primary" style="float:right; padding-right: 75px;">Price Details</button>
-
-                    <div class="col-md-9">
-                        <div class="demo">
-                         This service includes installation of new wiring system, laying down pipings for new house, installation of new points, new lights, power sockets, MCBs.
-                        </div>
-                          
-                      </div>
-
-                    </div>
+                  <div class="col-md-3" style="padding-left: 2vw;">
+                    <i class="fa fa-microphone" style="font-size: 60px"></i>
                   </div>
 
+                </div>
+
+                <div class="row" style="">
+                <div class="col-md-2" > <!-- style="margin-right: 133px;" -->
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
                   </div>
-                <!-- </div> -->
+                </div>
+                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+                  
+                </div>
+
+                <div class="col-md-3" > <!-- style="margin-right: 100px;" -->
+                  <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <button type="button" class="btn btn-primary">Upload</button>
+                  </form>
+                </div>
+                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+                  
+                </div>
+
+                <div class="col-md-3">
+                  <button type="button" class="btn btn-danger">Record</button>
+                </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
           </div>
 
-        <div class="panel">
+        <!-- <div class="panel">
            <header class="panel__header">
               <h2 class="panel__title">Details about your Problem</h2>
               <p class="panel__subheading">Please fill up at least one</p>
@@ -261,7 +329,7 @@
 
                 </div>
               </div>
-        </div>
+        </div> -->
 
         <div class="panel">
            <header class="panel__header">
@@ -333,20 +401,15 @@
                       <td>Electrical Minor</td>
                     </tr>
 
-                    <tr class="success">
-                      <td>Date</td>
-                      <td>2nd July, 2018</td>
-                    </tr>
-
-                    <tr class="danger">
-                      <td>Time</td>
-                      <td>11:00 AM</td>
-                    </tr>
-
                     <tr class="info">
                       <td>Location</td>
                       <td>Himalaya Hotel, Kupondole</td>
                     </tr>
+
+                    <tr class="success">
+                      <td>Scheduled Date and Time </td>
+                      <td>2nd July, 2018  11:00 AM</td>
+                    </tr>                    
 
                   </tbody>
                 </table>

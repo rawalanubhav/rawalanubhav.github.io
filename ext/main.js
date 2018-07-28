@@ -141,7 +141,7 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the Service names in the world:*/
-var service = ["Plumbing","Aluminum","Electrical","Applicance","Computer","Networking","Ramesh","Electron"];
+var service = ["Plumbing","Aluminum","Electrical","Applicance","Computer","Networking","Ramesh"];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the service array as possible autocomplete values:*/
 autocomplete(document.getElementById("search-bar"), service);

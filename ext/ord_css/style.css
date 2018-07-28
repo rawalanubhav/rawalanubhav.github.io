@@ -152,7 +152,7 @@ html {
 .panel__title {
   font-size: 1.5rem;
   line-height: 2rem;
-  margin: 0;
+  margin: 26px 0 5px 0;
 }
 .panel__subheading {
   font-size: 0.9rem;
@@ -340,4 +340,27 @@ html {
 
 #or-spe{
   margin: 10px 0;
+}
+
+#step_label1{
+  position: absolute;
+  color: black;
+  margin-left: 12.7vw;
+}
+
+#step_label2{
+  position: absolute;
+  color: black;
+  margin-left: 11vw;
+}
+#step_label3{
+  position: absolute;
+  color: black;
+  margin-left: 11.9vw;
+}
+
+#price_button{
+  padding: 0 3px;
+  font-size: 12px;
+  /*border-radius: 50%;*/
 }
