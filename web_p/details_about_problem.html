@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DETAILS ABOUT THE PROBLEM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../ext/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="../ext/main.css">
+  <script src="../ext/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-light fixed-top navbar-expand-md">
+    <div class="container">
+         <a class="navbar-brand" href="#"><img src="../img/sms_logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="active">
+                    <a class="nav-link scroll-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Become A Professional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#">Login/Register</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <form class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for our services eg. plumbing">
+        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+      </form>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class "container">
+      <h2>Our services </h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="../img/elec.png">
+          </div>
+          <div class="thumbnail">
+            <img src="../img/plumb.png">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="../img/comp.png">
+          </div>
+          <div class="thumbnail">
+            <img src="../img/paint.png">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="../img/carp.png">
+          </div>
+          <div class="thumbnail">
+            <img src="../img/comp_net.png">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <div class="container">
+              <!-- Button to Open the Modal -->
+             <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Open modal
+              </button>-->          
+              <a href="#"><img data-toggle="modal" data-target="#myModal" src="../img/elect.png"></a>
+              <!-- The Modal -->
+              <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">DETAILS ABOUT THE PROBLEM</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <div class="upload">
+                          <div class "container">
+
+                            <div class="row" id="com">
+                              <div class="col-md-3">
+                                <i class="fa fa-commenting" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row" style="padding: 5px 5px 35px 20px;">
+                              <div class="col-md-3">
+                                <i class="fa fa-photo" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-8" style="text-align: left;">
+                                <form action="upload.php" method="post" enctype="multipart/form-data">
+                                  <input type="file" name="file">
+                                  <button type="button" class="btn btn-primary">Upload</button>
+                                </form>
+                              </div>
+                            </div>
+
+                            <div class="row" style="padding: 15px 15px 25px 20px;">
+                              <div class="col-md-3">
+                                <i class="fa fa-microphone" style="font-size: 100px"></i>
+                              </div>
+                              <div class="col-md-6" style="text-align: left;">
+                                <button type="button" class="btn btn-danger">Record</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="thumbnail">
+            <img src="../img/Alumin.png">
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="tech">
+    <div class "container">
+      <h2> Top Rated Technician</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="../img/person.png">
+            <h2> Plumbing Expert </h2>
+            <p> 
+              Average Rating:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> 
+            </p>
+            <button type="button" class="btn btn-info">View Profile</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="../img/person.png">
+            <h2> Computer Expert </h2>
+            <p> 
+              Average Rating:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> 
+            </p>
+            <button type="button" class="btn btn-info">View Profile</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="../img/person.png">
+            <h2> Electrical Expert </h2>
+            <p> 
+              Average Rating:
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span> 
+            </p>
+            <button type="button" class="btn btn-info">View Profile</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="../ext/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="../ext/main.js"></script>
+</body>
+</html>

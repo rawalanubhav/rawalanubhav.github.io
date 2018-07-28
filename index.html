@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sajilo Marmat Sewa</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/sms_logo.png"/>
+    <link rel="stylesheet" href="ext/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="ext/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+    <link rel="stylesheet" href="ext/datepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ext/main.css">
+    <link rel="stylesheet" type="text/css" href="ext/schedule.css">
+    <link rel="stylesheet" type="text/css" href="ext/ordersummary.css">
+    <link rel="stylesheet" type="text/css" href="ext/RateList.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light fixed-top navbar-expand-md">
+      <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="active">
+                      <a class="nav-link scroll-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Price</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="pg_extra/index.html">My Bookings</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Login/Register</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <!-- <div class="container"> -->
+        <h1>Your Service Expert</h1>
+        <form class="search-container" action="order.html" type= "submit">
+          <input type="text" id="search-bar" placeholder="Search for our services eg. plumbing" type="submit">
+          <!-- <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a> -->
+          <button class="search-icon" id="bth-bar" type='submit' class="btn btn-link"><i class="fa fa-search"></i></button>
+        </form>
+      <!-- </div> -->
+    </div>
+
+    <div class="services">
+      <!-- <div class "container"> -->
+        <h2>Our Services </h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/comp.png"id="serv">
+              
+              <h6> Computer</h6>
+            </div>
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/plumb.png"id="serv">
+              <h6>Plumbing</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/elec.png"id="serv">
+              <h6>Appliance</h6>
+            </div>
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/paint.png"id="serv">
+              <h6>Painting</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/carp.png" id="serv">
+              <h6>Carpentry</h6>
+            </div>
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/comp_net.png" id="serv">
+              <h6>Network</h6>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <!-- <div class="thumbnail" > -->
+              <div class="container">
+                <!-- Button to Open the Modal -->
+               <!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                  Open modal
+                </button>-->
+                <div class="thumbnail" id="ic-boc">
+                <a href="order.html"><img data-toggle="modal" data-target="#myModal" src="img/elect.png" id="serv"></a>
+                <h6>Electrical</h6>
+                </div>
+
+              </div>
+
+            <!-- </div> -->
+            <div class="thumbnail" id="ic-boc">
+              <img src="img/Alumin.png" id="serv">
+              <h6>Aluminum</h6>
+            </div>
+          </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="tech">
+      <div class "container">
+        <h2> Top Rated Technician</h2>
+
+        <div class="row">
+          <div class="col-md-4" style="text-align: center;">
+            <div class="thumbnail_tech" >
+              <div class="tech_img">
+                <img src="img/plum_p.jpg" class="img-circle">
+              </div>
+
+              <div class="name-tech">
+                <p class="name">Janak Thapa</p>
+                <p class="job-title"> Plumbing Expert </p>
+              </div>
+
+              <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+              <button type="button" class="btn btn-info">View Profile</button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail_tech">
+              <div class="tech_img">
+                <img src="img/com_p.jpg" class="img-circle">
+              </div>
+
+              <div class="name-tech">
+                <p class="name">Shambhu Adhakari</p>
+                <p class="job-title"> Computer Expert </p>
+              </div>
+
+              <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+              <button type="button" class="btn btn-info">View Profile</button>
+            </div>
+          </div>
+
+          <div class="col-md-4" >
+            <div class="thumbnail_tech">
+              <div class="tech_img">
+                <img src="img/elec_p.jpg" class="img-circle">
+              </div>
+
+              <div class="name-tech">
+                <p class="name">Shyam Krishna</p>
+                <p class="job-title"> Electric Expert </p>
+              </div>
+              <p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </p>
+              <a href="pg_extra/user_profile/index.html"><button type="button" class="btn btn-info">View Profile</button></a>
+            </div>
+          </div>
+         </div>
+
+      </div>
+    </div>
+
+    <!-- <div id="wh-widget-send-button" class=" wh-widget-right" style="width: 345px; height: 464px;">
+      <iframe id="wh-widget-send-button-iframe" src="http://whatshelp.io/widget/wSendButton?facebook=1869764829942538&amp;company_logo_url=%2F%2Fstorage.whatshelp.io%2Fwidget%2Ff1%2Ff17d%2Ff17dcd99b30ab047145148c4ddd1abf4%2F19275000_1880989438820077_1329662227361661268_n.jpg&amp;greeting_message=Hello%2C%20how%20may%20we%20help%20you%3F%20Just%20send%20us%20a%20message%20now%20to%20get%20assistance.&amp;call_to_action=Message%20us&amp;position=right&amp;ga=false&amp;branding=true&amp;mobile=true&amp;desktop=true&amp;shift_vertical=0&amp;shift_horizontal=0&amp;domain=null&amp;key=null&amp;button_color=%23ff6550&amp;parentWrapperId=wh-widget-send-button&amp;clientHostname=sajilosewa.com&amp;showHelloPopup=0&amp;isMobile=0">
+      </iframe>
+    </div> -->
+
+    <!-- Footer -->
+    <style type="text/css">
+      hr{
+        margin-right:151px;
+        background-color: #fff;
+      }
+    </style>
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col_one_third">
+                <div class="widget clearfix">
+                    <h4>Contact Us</h4>
+                    <hr>
+                    <div>
+                      <address>Sajilo Marmat Sewa Pvt. Ltd. Idea Action Buliding, KUSOM Pinchetole, Balkumari, Lalitpur</address>
+                      <abbr title="Phone Number"><strong>Phone:</strong></abbr>
+                      +977-1-5186023                        <br>
+                      <abbr title="Email Address"><strong>Email:</strong></abbr>
+                      info@sajilosewa.com                    
+                    </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            
+          </div>
+        </div>
+      </div>
+      <div class="Footer-logo">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 20px !important;">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p class="h6">Copyright &copy All right Reversed by<a class="text-green ml-2" href="#" target="_blank">Team Sajilo</a></p>
+            </div>
+          </div>  
+      </div>
+    </section>
+    
+    <!-- ./Footer -->
+
+
+
+
+
+
+
+
+
+    <script src="ext/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="ext/main.js"></script>
+<!--
+    <script type="text/javascript">
+      (function () {
+        var options = {
+          facebook: "1869764829942538", // Facebook page ID
+          call_to_action: "Message us", // Call to action
+          position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+    </script>
+    -->
+  </body>
+</html>
