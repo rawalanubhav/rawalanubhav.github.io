@@ -155,8 +155,7 @@
       <div class="panels">
         <div class="panel">
           <header class="panel__header">
-            <h2 class="panel__title">Select your required type of Service</h2>
-            <p class="panel__subheading">Select one </p>
+            <h2 class="panel__title"><strong>Choose your Service Type</strong></h2>
             <style type="text/css">
               input[type=radio]{
               width: 25px;
@@ -225,56 +224,61 @@
             </div>
 
             <header class="panel__header">
-              <h2 class="panel__title">Describe Your Problem</h2>
+              <h2 class="panel__title"><strong>Describe Your Problem</strong></h2>
               <p class="panel__subheading">At least one</p>
             </header>
 
             <div class="upload">
               <div class "container-fluid">
 
-                <div class="row" style="padding: 5px 5px 35px 20px;">
+                <div class="row" style="padding: 5px 0px 35px 0px; text-align: center;">
 
                   <div class="col-md-3" >
-                    <i class="fa fa-commenting" style="font-size: 60px"></i>
+                    <img src="img/comnt.png" style="height: 100px; width: 100px;">
                   </div>
 
                   
 
-                  <div class="col-md-3" style="padding-left: 2vw;" >
-                    <i class="fa fa-photo" style="font-size: 60px"></i>
+                  <div class="col-md-4" style="width: 75%" >
+                    <img src="img/upload.png" style="height: 100px; width: 100px;">
                   </div>
                   
-                  <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+                  <!-- <div class="col-md-1" > 
                   
-                  </div>
+                  </div> -->
 
-                  <div class="col-md-3" style="padding-left: 2vw;">
-                    <i class="fa fa-microphone" style="font-size: 60px"></i>
+                  <div class="col-md-3">
+                    <img src="img/voice_r.png" style="height: 100px; width: 100px;">
                   </div>
 
                 </div>
 
-                <div class="row" style="">
-                <div class="col-md-2" > <!-- style="margin-right: 133px;" -->
+                <div class="row" style="text-align: center; padding-left: 0;">
+                <div class="col-md-3" >
                   <div class="form-group">
-                    <textarea class="form-control" rows="3" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
                   </div>
                 </div>
-                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+               <!--  <div class="col-md-1" > style="margin-right: 133px;"
                   
-                </div>
+                </div> -->
 
-                <div class="col-md-3" > <!-- style="margin-right: 100px;" -->
-                  <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <input type="file" name="file">
-                    <button type="button" class="btn btn-primary">Upload</button>
+                <div class="col-md-3" style="margin-left: 3vw; width: 75%"> 
+
+                  <form method="post" action="#" id="#" >
+                    <div class="form-group files">
+                      <input type="file" class="form-control" multiple="">
+                    </div>
                   </form>
-                </div>
-                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
-                  
-                </div>
 
-                <div class="col-md-3">
+                </div>
+                <!-- <div class="col-md-1" > style="margin-right: 133px;"
+                  
+                </div> -->
+
+                <div class="col-md-4" style="margin-left: 1.4vw;">
+                  <h2 style="font-size:55px; margin-bottom: 0px; color: #777373;">00:00</h2>
+                  <br>
                   <button type="button" class="btn btn-danger">Record</button>
                 </div>
 
@@ -347,16 +351,14 @@
                   <div class="form-group" id="form-align">
                     
                     <div class="input-group date" style="width: 741px;">
-                      <input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress">
-                        <div class="input-group-text"><a href="#"><i class="material-icons">edit_location</i></a></div>
+                      <input type="text" class="form-control" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                        <div class="input-group-text" style="padding: 0; margin: 0; border-width: 0;"><button type="button" class="btn btn-primary" id="loc" data-toggle="modal" data-target="#myModallocation">My Location<i class="material-icons">location_on</i></button></div>
                     </div>
 
-                    <input type="text" class="form-control"  name="City" placeholder="City">
-                    <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
+                    <input type="text" class="form-control" id="city" name="City" placeholder="City">
+                    <input type="text" class="form-control" id="lndmrk" name="Landmark" placeholder="Landmark">
 
-                    <h4 id="or-spe">OR<h4>
-
-                    <button type="button" class="btn btn-primary" id="loc">Use my currrent location <i class="material-icons">my_location</i></button>
+                    
 
                   </div>
                 </div>
@@ -498,6 +500,30 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="myModallocation" >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><strong>Pin Your Location</strong></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img src="img/map.png" style="height: 60vh; width: 57vw">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="myModallocation">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   

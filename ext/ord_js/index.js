@@ -254,3 +254,14 @@ $(document).on('click','#n_button',function(event){
 
   return false;
 });
+
+$(document).ready(function(){
+    $("#loc").click(function(){
+        var input1 = $('#addrs');
+        var input2 = $('#city');
+        var input3 = $('#lndmrk');
+        input1.val('Tahachal Marg');
+        input2.val('Kathmandu');
+        input3.val('Crowne Plaza Kathmandu-Soaltee');
+    });
+});
