@@ -14,7 +14,9 @@ body{
   border:0 !important;
   padding-left: 100px;
   padding-right: 50px;
-
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 .navbar-brand{
   float: left;
@@ -75,4 +77,109 @@ body{
     margin-left: -15px;
     padding-top: 35px;
     padding-bottom: 20px;
+}
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0 30px 0;
+
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    /*background: #114b71 !important;*/
+    background-image: url("https://www.appnovation.com/sites/default/files/2016-12/formbg.gif") !important ;
+}
+#footer h5{
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size:25px;
+/*  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;*/
+  transition: .35s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+#footer ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.quick-links li a i{
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.col_one_third{
+  margin-right: 20px;
+  color: #d5c9c9;
+  font-size: 12px;
+}
+
+.Footer-logo{
+  background-color: #0e3c5a;
+}
+
+table.dataTable{
+  background-color:#204b71;
+  border-spacing: 1px;
+  
+}
+.sorting:after {
+   opacity: 1; 
+  
+}
+#exampleFormControlTextarea1{
+  margin-left: 35px;
+  padding-right: 0px;
+  padding-top: 15px;
+}
+.input-group{
+  width: 65%;
 }

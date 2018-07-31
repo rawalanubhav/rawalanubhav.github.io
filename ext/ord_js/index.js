@@ -241,16 +241,52 @@ $(function() {
 // }
 
 function topFunction() {
-    document.body.scrollTop = 15;;
-    document.documentElement.scrollTop = 15;
-    event.preventDefault();
-    $('html','body').animate({scrollTop:0},800);
-    return false;
+  document.body.scrollTop = 15;
+  document.documentElement.scrollTop = 15;
+  event.preventDefault();
+  $('html','body').animate({scrollTop:0},8000);
+  return false;
 }
 
-$(document).on('click','#n_button',function(event){
-  event.preventDefault();
-  $('html','body').animate({scrollTop:0},800);
+// $(document).on('click','#n_button',function(event){
+//   event.preventDefault();
+//   $('html','body').animate({scrollTop:0},8000);
 
-  return false;
+//   return false;
+// });
+
+$(document).ready(function(){
+  $("#loc").click(function(){
+    var input1 = $('#addrs');
+    var input2 = $('#city');
+    var input3 = $('#lndmrk');
+    input1.val('Crowne Plaza Kathmandu-Soaltee, Tahachal Marg');
+    input2.val('Kathmandu');
+    input3.val('Crowne Plaza Kathmandu-Soaltee');
+  });
+});
+
+var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();
+
+$( function() {
+  $( ".date-picker" ).datepicker();
+} );
+
+// $('#datepicker').datepicker();
+
+
+
+$(window).on('beforeunload', function(){
+  // your logic here`enter code here`
+  document.body.scrollTop = 15;
+  document.documentElement.scrollTop = 15;
+  event.preventDefault();
+  $('html','body').animate({scrollTop:0},8000);
+  // return false;
+});
+
+
+$("#book_end").on('click',function() {
+    location.reload();
+    console.log('hello');
 });

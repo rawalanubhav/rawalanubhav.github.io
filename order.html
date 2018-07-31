@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="ext/datepicker.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -23,37 +24,35 @@
   
 </head>
 
-<body>
+<body style="*,*::before,*::after {box-sizing: border-box;}">
 
-    <nav class="navbar navbar-light fixed-top navbar-expand-md">
+    <!-- Top navigation -->
+    <nav class="navbar navbar-expand-md fixed-top top-nav" >
       <div class="container">
           <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Price</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="pg_extra/index.html">My Bookings</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Login/Register</a>
-                  </li>
-              </ul>
-          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Become A Professional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pg_extra/index.html">My Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user">Ramesh</i></a>
+              </li>
+            </ul>
+          </div>  
       </div>
     </nav>
+    <!--End Top navigation -->
 
   <div class="wrapper" style="padding-top: 50px;">
   <div id="wizard" class="wizard">
@@ -134,8 +133,8 @@
               <p class="step__number"><i class="fa fa-check-square-o"></i></p>
               <p id="step_label3">Order Confirmation</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/></circle>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></path>
               </svg>
 
               <div class="lines">
@@ -155,15 +154,15 @@
       <div class="panels">
         <div class="panel">
           <header class="panel__header">
-            <h2 class="panel__title">Select your required type of Service</h2>
-            <p class="panel__subheading">Select one </p>
+            <h2 class="panel__title"><strong>Choose your Service Type</strong></h2>
+            
             <style type="text/css">
               input[type=radio]{
-              width: 25px;
-              height: 25px;
-              }
-              
+              width: 20px;
+              height: 20px;
+              } 
             </style>
+
           </header>
           
             
@@ -172,7 +171,7 @@
             <div class="row" id="rdo_fill">
               <div class="form-check" style="width: 1170px;">
               
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;margin-top: 8px;">
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Minor Electrical Repair </label>
                 
                 <div class="col-md-12">
@@ -190,7 +189,7 @@
             
             <div class="row" id="rdo_fill">
               <div class="form-check" style="width: 1170px;"> 
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;margin-top: 8px;">
                 
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Critical Repairs </label>
 
@@ -209,7 +208,7 @@
 
             <div class="row" id="rdo_fillf">
               <div class="form-check" style="width: 1170px;">
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;margin-top: 8px;">
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">New Electrical Installations </label>
 
                 <div class="col-md-12">
@@ -225,56 +224,62 @@
             </div>
 
             <header class="panel__header">
-              <h2 class="panel__title">Describe Your Problem</h2>
-              <p class="panel__subheading">At least one</p>
+              <p class="panel__title"><strong>Describe Your Problem</strong></p>
+              <p style="font-size: 0.8em; color:grey ">Fill up at least one</p>
+              
             </header>
 
             <div class="upload">
               <div class "container-fluid">
 
-                <div class="row" style="padding: 5px 5px 35px 20px;">
+                <div class="row" style="padding: 5px 0px 35px 0px; text-align: center;">
 
-                  <div class="col-md-3" >
-                    <i class="fa fa-commenting" style="font-size: 60px"></i>
+                  <div class="col-md-3">
+                    <img src="img/comnt.png" style="height: 100px; width: 100px;">
                   </div>
 
                   
 
-                  <div class="col-md-3" style="padding-left: 2vw;" >
-                    <i class="fa fa-photo" style="font-size: 60px"></i>
+                  <div class="col-md-4" style="width: 75%; margin-left: 4.5vw;" >
+                    <img src="img/upload.png" style="height: 100px; width: 100px;">
                   </div>
                   
-                  <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+                  <!-- <div class="col-md-1" > 
                   
-                  </div>
+                  </div> -->
 
-                  <div class="col-md-3" style="padding-left: 2vw;">
-                    <i class="fa fa-microphone" style="font-size: 60px"></i>
+                  <div class="col-md-3">
+                    <img src="img/voice_r.png" style="height: 100px; width: 100px;">
                   </div>
 
                 </div>
 
-                <div class="row" style="">
-                <div class="col-md-2" > <!-- style="margin-right: 133px;" -->
+                <div class="row" style="text-align: center; padding-left: 0;">
+                <div class="col-md-3" >
                   <div class="form-group">
-                    <textarea class="form-control" rows="3" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
                   </div>
                 </div>
-                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
+               <!--  <div class="col-md-1" > style="margin-right: 133px;"
                   
-                </div>
+                </div> -->
 
-                <div class="col-md-3" > <!-- style="margin-right: 100px;" -->
-                  <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <input type="file" name="file">
-                    <button type="button" class="btn btn-primary">Upload</button>
+                <div class="col-md-3" style="margin-left: 6.5vw; width: 75%"> 
+
+                  <form method="post" action="#" id="#" >
+                    <div class="form-group files">
+                      <input type="file" class="form-control" multiple="">
+                    </div>
                   </form>
-                </div>
-                <div class="col-md-1" > <!-- style="margin-right: 133px;" -->
-                  
-                </div>
 
-                <div class="col-md-3">
+                </div>
+                <!-- <div class="col-md-1" > style="margin-right: 133px;"
+                  
+                </div> -->
+
+                <div class="col-md-4" style="margin-left: 2.2vw;">
+                  <h2 style="font-size:55px; margin-bottom: 0px; color: #777373;">00:00</h2>
+                  <br>
                   <button type="button" class="btn btn-danger">Record</button>
                 </div>
 
@@ -286,51 +291,6 @@
 
           </div>
 
-        <!-- <div class="panel">
-           <header class="panel__header">
-              <h2 class="panel__title">Details about your Problem</h2>
-              <p class="panel__subheading">Please fill up at least one</p>
-           </header>
-
-              <div class="upload">
-                <div class "container">
-
-                  <div class="row" style="padding: 5px 5px 35px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-commenting" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row" style="padding: 5px 5px 35px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-photo" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6" style="text-align: left;">
-                      <form action="upload.php" method="post" enctype="multipart/form-data">
-                        <input type="file" name="file">
-                        <button type="button" class="btn btn-primary">Upload</button>
-                      </form>
-                    </div>
-                  </div>
-
-                  <div class="row" style="padding: 15px 15px 25px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-microphone" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6" style="text-align: left;">
-                      <button type="button" class="btn btn-danger">Record</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-        </div> -->
-
         <div class="panel">
            <header class="panel__header">
               <h2 class="panel__title">Schedule your Service</h2>
@@ -339,40 +299,74 @@
             <div class "container-fluid">
               
 
-              <div class="row" id="row2">
-                <div class="col-md-3">
+              <div class="row" style="width: 1300px;">
+                <div class="col-md-5">
                   <h5>Location</h5>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group" id="form-align">
-                    
-                    <div class="input-group date" style="width: 741px;">
-                      <input type="text" class="form-control"  name="House No." placeholder="House No./StreetAddress">
-                        <div class="input-group-text"><a href="#"><i class="material-icons">edit_location</i></a></div>
-                    </div>
-
-                    <input type="text" class="form-control"  name="City" placeholder="City">
-                    <input type="text" class="form-control"  name="Landmark" placeholder="Landmark">
-
-                    <h4 id="or-spe">OR<h4>
-
-                    <button type="button" class="btn btn-primary" id="loc">Use my currrent location <i class="material-icons">my_location</i></button>
-
-                  </div>
                 </div>
               </div>
 
-              <div class="row" id="row1">
-                <div class="col-md-3">
-                  <h5>Date and Time</h5>
-                </div>
-                <div class="col-md-7" style="max-width: 741px;">
-                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM">
-                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+              <div class="row" style="width: 1313px;">
+                <div class="col-md-11">
+                 <!--  <div class="input-group date" style="width: 104%;">
+                    <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                      
+                      <div class="input-group-text" style="position: absolute; float: right; padding: 0; margin: 0; border-width: 0;">
+                      <button type="button" class="btn btn-primary" ></button>
+                      <! </div>
+                  </div> --> 
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                    <div class="input-group-append">
+                      <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" data-toggle="modal" data-target="#myModallocation" style="background-color: #17a2b8;color: white;">Locate Me<i class="material-icons">location_on</i></span></a>
                     </div>
                   </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5" >
+                  <input type="text" class="form-control txt_field" id="city" name="City" placeholder="City" style="width: 549px;">
+                </div>
+                <div class="col-md-5">
+                  <input type="text" class="form-control txt_field" id="lndmrk" name="Landmark" placeholder="Landmark" style="margin-left: 28px;width: 546px;">
+                </div>
+              </div>
+                    
+
+              <div class="row" style="width:1313px;; margin-top: 30px;">
+
+                <div class="col-md-5">
+                  <h5> Appointment Date</h5>
+                </div>
+
+                <div class="col-md-5" style="margin-left: 55px;">
+                  <h5> Appointment Time</h5>
+                </div>
+
+              </div>
+
+              <div class="row" style="width: 1313px; margin-bottom: 30px;">
+
+                <div class="col-md-5" >
+                  <!-- <input type="date" class="form-control txt_field" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"> -->
+
+                  <!-- <input type="date" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'mm/dd/yyyy'" data-date-format="mm/dd/yyyy" required="" value=""  / > -->
+                  <!-- <div class="well">
+                    <input type="text" class="form-control txt_field date-picker" name="date" placeholder="Select Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" data-date-format="dd/mm/yyyy" id="dp2" required="">
+                  </div> -->
+
+                  <!-- <input type="text" class="form-control  date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required=""> -->
+
+
+                  <div id="datepicker">
+                    <input type="text" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
+                  </div>
+                </div>
+                
+                <div class="col-md-5" style="margin-left: 55px;" >
+                  <input type="text" class="form-control txt_field" placeholder="hh:mm">
                 </div>
               </div>
 
@@ -393,7 +387,7 @@
                   <tbody>
                     <tr>
                       <td>Order Number</td>
-                      <td>1234</td>
+                      <td>008257</td>
                     </tr>
 
                     <tr>
@@ -403,20 +397,25 @@
 
                     <tr class="info">
                       <td>Location</td>
-                      <td>Himalaya Hotel, Kupondole</td>
+                      <td>Crowne Plaza Kathmandu-Soaltee, Tahachal Marg,Kathmandu (Crowne Plaza Kathmandu-Soaltee)</td>
                     </tr>
 
                     <tr class="success">
-                      <td>Scheduled Date and Time </td>
-                      <td>2nd July, 2018  11:00 AM</td>
+                      <td>Appointed Date and Time </td>
+                      <td>3nd August, 2018  11:00 AM</td>
+                    </tr>
+
+                     <tr class="success">
+                      <td>Comments</td>
+                      <td>My home's lighting system is not working</td>
                     </tr>                    
 
                   </tbody>
                 </table>
               </div>
             </div>
-            <p style="color: red; text-align: center; font-size: 20px;">
-              <STRONG>Note: The cost estimation and technician details will be sent with an hour.</STRONG>
+            <p style="color: red; text-align: center; font-size: 20px; width: 1350px;">
+              <STRONG>Note: The cost estimation and technician details will be sent within an hour.</STRONG>
             </p>
 
         </div>
@@ -434,7 +433,7 @@
       <p>
         Your Order has been placed. Please confirm your order number <strong style="color: blue;">"008257"</strong> with technician for the verification.
       </p>
-      <a href="pg_extra/index.html"><button class="btn btn-primary">My Bookings</button></a>
+      <a href="pg_extra/index.html"><button class="btn btn-primary" id="book_end">My Bookings</button></a>
     </div>
 
   </div>
@@ -499,6 +498,125 @@
     </div>
   </div>
 
+  <div class="modal fade" id="myModallocation" >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><strong>Pin Your Location</strong></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+          
+          <script>
+          function myMap() {
+          var mapProp= {
+              center:new google.maps.LatLng(27.7007,85.2911),
+              zoom:20,
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoKTYicpFD5SEQL-ywhq7mpMkM-jZXmFw&callback=myMap"></script>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="loc" data-dismiss="modal" data-toggle="modal" data-target="myModallocation">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<body >
+  <!-- Footer -->
+    <style type="text/css">
+      hr{
+        margin-right:151px;
+        background-color: #fff;
+      }
+    </style>
+    <section id="footer" style="">
+      <div class="container">
+      <div class="row" style="margin-bottom: 20px;" >
+          <div class="input-group mb-3" style="width: 40%; margin-left: 31%;">
+            <input type="text" class="form-control" placeholder="random@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" style="background-color: #f15b28; color: white;">Subscribe</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+
+          <div class="col-xs-12 col-sm-12 col-md-3">
+            <div class="col_one_third">
+                <div class="widget clearfix">
+                    <h4>Contact Us</h4>
+                    <hr>
+                    <div>
+                      <address>Sajilo Marmat Sewa Pvt. Ltd. Idea Action Buliding, KUSOM Pinchetole, Balkumari, Lalitpur</address>
+                      <abbr title="Phone Number"><strong>Phone:</strong></abbr>
+                      +977-1-5186023                        <br>
+                      <abbr title="Email Address"><strong>Email:</strong></abbr>
+                      info@sajilosewa.com                    
+                    </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5 style="margin-left: 20%;">Quick links</h5>
+            <ul class="list-unstyled quick-links"style="margin-left: 20%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-4 col-md-4" >
+            <h5 style="margin-left: 30%;">About</h5>
+            <ul class="list-unstyled quick-links" style="margin-left: 30%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>SMS.Inc</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Policies</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Press</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="Footer-logo">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 20px !important;">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p class="h6">Copyright &copy All right Reversed by<a class="text-green ml-2" href="#" target="_blank">Team Sajilo</a></p>
+            </div>
+          </div>  
+      </div>
+    </section>
+    
+    <!-- ./Footer -->
+
+
 
   
   <script src="ext/js/bootstrap.min.js"></script>
@@ -509,6 +627,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
+  <script src="ext/bootstrap-datepicker.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
   <script src="ext/main.js"></script>
   <script  src="ext/ord_js/index.js"></script>

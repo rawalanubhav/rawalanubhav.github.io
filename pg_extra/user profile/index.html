@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="review.css">
+
+  <!--- Include the above in your HEAD tag ---------->
+
+  <title>My Webpage</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar navbar-light navbar-expand-md">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="sms_logo.png"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="active">
+            <a class="nav-link scroll-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#">Become A Professional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#">Price</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-link" href="#">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav bar End-->
+
+  <div class="container">
+    <div class="row profile">
+      <div class="col-md-3 ">
+        <div class="profile-sidebar">
+          <!-- SIDEBAR USERPIC -->
+          <div class="profile-userpic">
+            <img src="elec_p.jpg" class="img-responsive mx-auto d-block" alt="">
+          </div>
+          <!-- END SIDEBAR USERPIC -->
+          <!-- SIDEBAR USER TITLE -->
+          <div class="profile-usertitle">
+            <div class="profile-usertitle-name">
+              Kusal Tamrakar
+            </div>
+            <div class="profile-usertitle-job">
+              Electrician
+            </div>
+          </div>
+          <!-- END SIDEBAR USER TITLE -->
+          <!-- SIDEBAR BUTTONS -->
+          <div class="profile-userbuttons">
+            <button id="book_now" type="button" class="btn btn-success btn-sm">Book Now</button><br>
+          </div>
+          <h5 class="text-center" > Average Rating</h5>
+
+            <div class="star-rating" >
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+    
+            </div>
+          
+
+          
+          
+
+
+
+
+          
+
+
+          <!-- END SIDEBAR BUTTONS -->
+          <!-- SIDEBAR MENU -->
+
+          <!-- Nav pills -->
+        <!--  <div class="profile-usermenu">
+            <ul class="nav nav-pills flex-column">
+              <li class=" nav-item ">
+                <a class="nav-link active" data-toggle="pill" href="#Overview">
+							Overview </a>
+              </li>
+              <li class=" nav-item">
+                <a href="#Ratings" class="nav-link" data-toggle="pill">
+
+							Ratings </a>
+            </li>
+
+            </ul> -->
+            <!-- Tab panes -->
+      <!--      <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="Overview">...</div>
+              <div role="tabpanel" class="tab-pane fade" id="Ratings">Ratings</div>
+            </div>
+          </div> -->
+
+          <!-- END MENU -->
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="profile-content">
+          <h4>Overview: </h4>
+          <b> Area of Expertise:</b>
+          <p>Installation of electrical system, new wiring and troubleshooting critical problems,
+            House and building wiring, MCB, Over switch, Power socket, TV socket, Telephone socket, 
+            Lighting, Distribution system
+            
+          </p>
+          <h4 id="rate_Detail"><b>Rating Details:</b></h4>
+          <div class="bottom"></div>
+          <div class="row">
+              <div class="col-md-3">
+                  <span class="head_title">Communication:</span>
+                  <span class="head_title">Punctuality:</span>
+                  <span class="head_title">Appearence:</span>
+                
+              </div>
+
+              <div class="col-md-3">
+                  <div class="lft_star"  >
+                     
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  
+                    <div class="lft_star"  >
+                     
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    
+                      <div class="lft_star"  >
+                     
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star "></span>
+                        </div>
+                
+                
+              </div>
+
+              <div class="col-md-3">
+                  <span class="head_title">Communication:</span>
+                  <span class="head_title">Punctuality:</span>
+                  <span class="head_title">Appearence:</span>
+                
+              </div>
+
+              <div class="col-md-3">
+                  <div class="lft_star"  >
+                     
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                    </div>
+                  
+                    <div class="lft_star"  >
+                     
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    
+                      <div class="lft_star"  >
+                     
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star "></span>
+                          <span class="fa fa-star "></span>
+                        </div>
+                
+                
+              </div>
+
+          </div>
+
+          
+          
+        
+
+          
+          
+
+
+          </div>
+
+          
+         
+
+
+         
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container review-block">
+    <h4 id="comment">Leave a Comment:</h4>
+    <form role="form">
+      <div class="form-group">
+        <textarea class="form-control" rows="3" cols="50" required></textarea>
+      </div>
+      <button  id="submit_button"  type="submit" class="btn btn-success btn-submit">Submit</button>
+    </form>
+    <br><br>
+
+    <p><span class="badge">2</span> Comments:</p><br>
+
+    <div class="row">
+      <div class="col-sm-2 text-center">
+        <img src="elec_p.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="col-sm-10 review-block">
+        <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <br>
+      </div>
+      <div class="col-sm-2 text-center">
+        <img src="elec_p.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+      </div>
+      <div class="col-sm-10 review-block">
+        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <br>
+        <p><span class="badge">1</span> Comment:</p><br>
+        <div class="row">
+          <div class="col-sm-2 text-center">
+            <img src="elec_p.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+          </div>
+          <div class="col-xs-10">
+            <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+            <p>Me too! WOW!</p>
+            <br>
+          </div>
+        </div>
+        <div class="review-block">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+              <div class="review-block-name"><a href="#">nktailor</a></div>
+              <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+            </div>
+            <div class="col-sm-9">
+              <div class="review-block-rate">
+                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </button>
+                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </button>
+                <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </button>
+                <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </button>
+                <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      </button>
+              </div>
+              <div class="review-block-title">Hassle free services: convenience</div>
+              <div class="review-block-description">Diagnosed the problem within a minute, and was very efficeint. I was updated about the price in prior, and he fininshed the work on time. Kudos to the team!</div>
+            </div>
+          </div>
+          <hr/>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+<script type="text/javascript" src="myjs.js">
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--
+
+-->
