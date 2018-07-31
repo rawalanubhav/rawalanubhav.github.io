@@ -1,11 +1,19 @@
-var status = "less";
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+ console.log(scroll);
+  if (scroll >= 50) {
+      $(".top-nav").addClass("light-header");
+  } else {
+      $(".top-nav").removeClass("light-header");
+  }
+});
 
-$(".navbar a").click(function(){
-  $("body,html").animate({
-   scrollTop:$("#" + $(this).data('value')).offset().top
-  },1000)
+// $(".navbar a").click(function(){
+//   $("body,html").animate({
+//    scrollTop:$("#" + $(this).data('value')).offset().top
+//   },1000)
   
- });
+//  });
 
 // $(function() {
 //  $('[data-toggle="datepicker"]').datepicker({
@@ -30,17 +38,7 @@ function rld(){
 }
 
 
-function name_col(){
-  data = document.getElementById("nam_but").closest();
-  alert(data);
-    if (status=="less"){
-        document.getElementById("nam_but").innerText = "Less Details";
-        status ="more";
-    }else if(status == "more"){
-        document.getElementById("nam_but").innerText = "More Details";
-        status ="less";
-    }
-}
+
 
 // Search-bar
 function autocomplete(inp, arr) {
@@ -155,3 +153,35 @@ $("#search-bar").keyup(function(event) {
 
 //Search-end
 
+// var datepicker = $.fn.datepicker.noConflict(); // return $.fn.datepicker to previously assigned value
+// $.fn.bootstrapDP = datepicker; 
+
+var date = $('#datepicker').datepicker({ dateFormat: 'mm/dd/yyyy' }).val();
+
+$( function() {
+  $( ".date-picker" ).datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '-3d'
+  });
+} );
+
+
+
+$(document).ready(function(){
+
+  $('.col-4-lg').hover(
+    // trigger when mouse hover
+    function(){
+      $(this).animate({
+        marginTop: "-=1%",
+      },200);
+    },
+
+      // trigger when mouse out
+      function(){
+        $(this).animate({
+          marginTop: "0%"
+        },200);
+      }
+  );
+});

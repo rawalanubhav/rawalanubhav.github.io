@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="ext/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="ext/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
     <link rel="stylesheet" href="ext/datepicker.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" type="text/css" href="ext/main.css">
     <link rel="stylesheet" type="text/css" href="ext/schedule.css">
     <link rel="stylesheet" type="text/css" href="ext/ordersummary.css">
@@ -25,39 +30,37 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-light fixed-top navbar-expand-md">
+    <!-- Top navigation -->
+    <nav class="navbar navbar-expand-md fixed-top top-nav">
       <div class="container">
           <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="active">
-                      <a class="nav-link scroll-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Price</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="pg_extra/index.html">My Bookings</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Login/Register</a>
-                  </li>
-              </ul>
-          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Become A Professional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pg_extra/index.html"><i class="fas fa-user" style="position: absolute; margin-left: 110px;margin-top: 3px;"></i>My Bookings </a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ramesh</a>
+              </li>
+            </ul>
+          </div>  
       </div>
     </nav>
+    <!--End Top navigation -->
 
-    <div class="jumbotron">
+    <div class="jumbotron image">
       <!-- <div class="container"> -->
-        <h1 style="color: white"><strong>Our Service Expert</strong></h1>
+        <h1 style="color: white"><strong>Your Service Expert</strong></h1>
         <form class="search-container" action="order.html" type= "submit">
           <input type="text" id="search-bar" placeholder="Search for our services eg. plumbing" type="submit">
           <!-- <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a> -->
@@ -130,77 +133,76 @@
     </div>
 
     <div class="tech">
-      <div class "container">
-        <h2> Top Rated Technician</h2>
-
-        <div class="row">
-          <div class="col-md-4" style="text-align: center;">
-            <div class="thumbnail_tech" >
-              <div class="tech_img">
-                <img src="img/plum_p.jpg" class="img-circle">
+      <div class="container" style="width: 100% !important;">
+        <div class="row" style="text-align: center;">
+            
+          <div class="col-md-4 col-xs-12">
+              <!-- Bootstrap Card -->
+            <div class="card" >
+              <img src="img/tech.jpg" alt="Card One" class="card-img-top">
+              <div class="card-body">
+                <div class="name-tech">
+                  <p class="name">Shambhu Adhakari</p>
+                  <p class="job-title"> Computer Expert </p>
+                </div>
+                <!-- <h5 class="card-title">Janak Thapa</h5>
+                <p class="card-text">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p> -->
+                <p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+                <button type="button" class="btn btn-info">View Profile</button>
               </div>
-
-              <div class="name-tech">
-                <p class="name">Janak Thapa</p>
-                <p class="job-title"> Plumbing Expert </p>
-              </div>
-
-              <p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </p>
-              <button type="button" class="btn btn-info">View Profile</button>
             </div>
           </div>
+          <div class="col-md-4 col-xs-12">
+              <div class="card" >
 
-          <div class="col-md-4">
-            <div class="thumbnail_tech">
-              <div class="tech_img">
-                <img src="img/com_p.jpg" class="img-circle">
+                <img src="img/tech.jpg" alt="Card Two" class="card-img-top">
+                <div class="card-body">
+                  <div class="name-tech">
+                    <p class="name">Shyam Krishna</p>
+                    <p class="job-title"> Electric Expert </p>
+                  </div>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </p>
+                  <a href="Profile.html"><button type="button" class="btn btn-info">View Profile</button></a>
+                </div>
               </div>
-
-              <div class="name-tech">
-                <p class="name">Shambhu Adhakari</p>
-                <p class="job-title"> Computer Expert </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="card" >
+              <img src="img/tech.jpg" alt="Card Two" class="card-img-top">
+              <div class="card-body">
+                <div class="name-tech">
+                  <p class="name">Janak Thapa</p>
+                  <p class="job-title"> Plumbing Expert </p>
+                </div>
+            
+                <p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </p>
+                <button type="button" class="btn btn-info">View Profile</button>
               </div>
-
-              <p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </p>
-              <button type="button" class="btn btn-info">View Profile</button>
             </div>
           </div>
+        </div>
+    </div>
 
-          <div class="col-md-4" >
-            <div class="thumbnail_tech">
-              <div class="tech_img">
-                <img src="img/elec_p.jpg" class="img-circle">
-              </div>
-
-              <div class="name-tech">
-                <p class="name">Shyam Krishna</p>
-                <p class="job-title"> Electric Expert </p>
-              </div>
-              <p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </p>
-              <a href="Profile.html"><button type="button" class="btn btn-info">View Profile</button></a>
-            </div>
-          </div>
-         </div>
-
-      </div>
     </div>
 
     <!-- <div id="wh-widget-send-button" class=" wh-widget-right" style="width: 345px; height: 464px;">
@@ -217,7 +219,17 @@
     </style>
     <section id="footer">
       <div class="container">
+      <div class="row" style="margin-bottom: 20px;" >
+          <div class="input-group mb-3" style="width: 40%; margin-left: 31%;">
+            <input type="text" class="form-control" placeholder="random@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" style="background-color: #f15b28; color: white;">Subscribe</span></a>
+            </div>
+          </div>
+        </div>
+
         <div class="row text-center text-xs-center text-sm-left text-md-left">
+
           <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="col_one_third">
                 <div class="widget clearfix">
@@ -235,9 +247,8 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
-            <h5>Quick links</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <h5 style="margin-left: 20%;">Quick links</h5>
+            <ul class="list-unstyled quick-links"style="margin-left: 20%;">
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
@@ -245,9 +256,17 @@
             </ul>
           </div>
 
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            
+
+          <div class="col-xs-12 col-sm-4 col-md-4" >
+            <h5 style="margin-left: 30%;">About</h5>
+            <ul class="list-unstyled quick-links" style="margin-left: 30%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>SMS.Inc</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Policies</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Press</a></li>
+            </ul>
           </div>
+
         </div>
       </div>
       <div class="Footer-logo">
@@ -282,13 +301,18 @@
 
 
     <script src="ext/js/bootstrap.min.js"></script>
+
+   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script  src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="ext/main.js"></script>
+
 <!--
     <script type="text/javascript">
       (function () {

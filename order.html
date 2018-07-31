@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="ext/datepicker.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
@@ -23,37 +24,35 @@
   
 </head>
 
-<body>
+<body style="*,*::before,*::after {box-sizing: border-box;}">
 
-    <nav class="navbar navbar-light fixed-top navbar-expand-md">
+    <!-- Top navigation -->
+    <nav class="navbar navbar-expand-md fixed-top top-nav" >
       <div class="container">
           <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Price</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="pg_extra/index.html">My Bookings</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Login/Register</a>
-                  </li>
-              </ul>
-          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Become A Professional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pg_extra/index.html">My Bookings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user">Ramesh</i></a>
+              </li>
+            </ul>
+          </div>  
       </div>
     </nav>
+    <!--End Top navigation -->
 
   <div class="wrapper" style="padding-top: 50px;">
   <div id="wizard" class="wizard">
@@ -134,8 +133,8 @@
               <p class="step__number"><i class="fa fa-check-square-o"></i></p>
               <p id="step_label3">Order Confirmation</p>
               <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/></circle>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></path>
               </svg>
 
               <div class="lines">
@@ -353,13 +352,17 @@
                 <div class="col-md-5" >
                   <!-- <input type="date" class="form-control txt_field" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"> -->
 
-                  <input type="date" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}" required="" value=""  / >
+                  <!-- <input type="date" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'mm/dd/yyyy'" data-date-format="mm/dd/yyyy" required="" value=""  / > -->
                   <!-- <div class="well">
                     <input type="text" class="form-control txt_field date-picker" name="date" placeholder="Select Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" data-date-format="dd/mm/yyyy" id="dp2" required="">
                   </div> -->
 
-                  <!-- <input type="text" class="form-control  date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
- -->
+                  <!-- <input type="text" class="form-control  date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required=""> -->
+
+
+                  <div id="datepicker">
+                    <input type="text" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
+                  </div>
                 </div>
                 
                 <div class="col-md-5" style="margin-left: 55px;" >
@@ -384,7 +387,7 @@
                   <tbody>
                     <tr>
                       <td>Order Number</td>
-                      <td>1234</td>
+                      <td>008257</td>
                     </tr>
 
                     <tr>
@@ -399,8 +402,8 @@
 
                     <tr class="success">
                       <td>Appointed Date and Time </td>
-                      <td>2nd July, 2018  11:00 AM</td>
-                    </tr>   
+                      <td>3nd August, 2018  11:00 AM</td>
+                    </tr>
 
                      <tr class="success">
                       <td>Comments</td>
@@ -412,7 +415,7 @@
               </div>
             </div>
             <p style="color: red; text-align: center; font-size: 20px; width: 1350px;">
-              <STRONG>Note: The cost estimation and technician details will be sent with an hour.</STRONG>
+              <STRONG>Note: The cost estimation and technician details will be sent within an hour.</STRONG>
             </p>
 
         </div>
@@ -529,7 +532,8 @@
       </div>
     </div>
   </div>
-
+</body>
+<body >
   <!-- Footer -->
     <style type="text/css">
       hr{
@@ -537,10 +541,20 @@
         background-color: #fff;
       }
     </style>
-    <section id="footer">
+    <section id="footer" style="">
       <div class="container">
+      <div class="row" style="margin-bottom: 20px;" >
+          <div class="input-group mb-3" style="width: 40%; margin-left: 31%;">
+            <input type="text" class="form-control" placeholder="random@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" style="background-color: #f15b28; color: white;">Subscribe</span></a>
+            </div>
+          </div>
+        </div>
+
         <div class="row text-center text-xs-center text-sm-left text-md-left">
-          <div class="col-xs-12 col-sm-4 col-md-4">
+
+          <div class="col-xs-12 col-sm-12 col-md-3">
             <div class="col_one_third">
                 <div class="widget clearfix">
                     <h4>Contact Us</h4>
@@ -557,9 +571,8 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
-            <h5>Quick links</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <h5 style="margin-left: 20%;">Quick links</h5>
+            <ul class="list-unstyled quick-links"style="margin-left: 20%;">
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
               <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
@@ -567,9 +580,17 @@
             </ul>
           </div>
 
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            
+
+          <div class="col-xs-12 col-sm-4 col-md-4" >
+            <h5 style="margin-left: 30%;">About</h5>
+            <ul class="list-unstyled quick-links" style="margin-left: 30%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>SMS.Inc</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Policies</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Press</a></li>
+            </ul>
           </div>
+
         </div>
       </div>
       <div class="Footer-logo">

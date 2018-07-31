@@ -165,3 +165,21 @@ section .section-title {
 .Footer-logo{
   background-color: #0e3c5a;
 }
+
+table.dataTable{
+  background-color:#204b71;
+  border-spacing: 1px;
+  
+}
+.sorting:after {
+   opacity: 1; 
+  
+}
+#exampleFormControlTextarea1{
+  margin-left: 35px;
+  padding-right: 0px;
+  padding-top: 15px;
+}
+.input-group{
+  width: 65%;
+}

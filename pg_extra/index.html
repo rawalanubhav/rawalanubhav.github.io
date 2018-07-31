@@ -7,10 +7,17 @@
 
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="clockface.css">
+    
+    
     
     <title>Sajilo Marmat Sewa</title>
 
@@ -28,37 +35,34 @@
   </head>
 
   <body >
-<!-- Nav bar -->
-    <nav class="navbar navbar-light navbar-expand-md">
-      <div class="container">
-          <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+<!-- Top navigation -->
+<nav class="navbar navbar-expand-md fixed-top top-nav">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/sms_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user" style="position: absolute; margin-left: 23.5vw;margin-top: 3px;"></i>Become A Professional</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="pg_extra/index.html">My Bookings <span class="sr-only">(current)</span> </a>
+              </li>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="active">
-                      <a class="nav-link scroll-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Become A Professional</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Price</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link scroll-link" href="#">Login/Register</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-    </nav>
-    <!-- Nav bar End-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ramesh</a>
+            </li>
+          </ul>
+        </div>  
+    </div>
+  </nav>
+  <!--End Top navigation -->
 
     <div class="container" style="padding-top: 10vh;" >
       <div class="row" id="table_list">
@@ -83,21 +87,14 @@
         </thead>
         <tbody>
 
-            <tr>
-                <td>008257</td>
-                <td>Plumbing work</td>
-                <td>Raj Bahadur Rokaya</td>
-                <td><span class="badge badge-success">Complete</span></td>
-                <td>2009/01/12</td>
-                <td>Rs. 86,000</td>
-            </tr>
+            
 
             <tr>
               <td>002587</td>
               <td>Electrical work</td>
               <td>Bahadur Raj Shrestha</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2017/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -106,7 +103,7 @@
               <td>Electrical work</td>
               <td>Asharam Chaudhary</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2017/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -115,7 +112,7 @@
               <td>Plumbing work</td>
               <td>Niranjan shau</td>
               <td><span class="badge badge-success">Complete</span></td>
-              <td>2011/04/25</td>
+              <td>2018/04/25</td>
               <td>Rs. 320,800</td>
             </tr>
 
@@ -124,11 +121,63 @@
                 <td>Electrician Appliance</td>
                 <td>Khursid Alam</td>
                 <td><span class="badge badge-warning">In Progress</span></td>
-                <td>2011/04/25
+                <td>2017/04/25
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" style="float: right">Edit</button>
                   
-                  <!-- Modals --> <!-- Modals -->
+                  
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Edit Date</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+      
+                            </div>
+                            <div class="modal-body">
+                                <div class="row" id="row1">
+                                    <div class="col-md-3">
+                                      <h5>Date:</h5>
+                                    </div>
+                                    <div class="col-md-7">
+                                      <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                                          <input class="datepicker" type="text" name="date" placeholder="MM/DD/YYYY"> 
+                                          
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Time:</h5>
+                                      </div>
+                                    <div class="col-md-7">
+                                        
+                                        <div class="input-group date" id="time_edit" data-target-input="nearest">
+                                           
+                                            <input type="text" id="t1" value="2:30 PM" class="form-control input-small" placeholder="11:00 AM" >
+                                            
+                                        </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                        <h5>Message:</h5>
+                                      </div>
+                                       <div class="form-group">
+                                        
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" cols="45"></textarea>
+                                      </div>
+                                    
+                                  </div>
+                              
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                  <!-- Modals -->
                 </td>
                 <td>N/A</td>
             </tr>
@@ -138,7 +187,7 @@
                 <td>Plumbing Work</td>
                 <td>Raj Bahadur Rokaya</td>
                 <td><span class="badge badge-warning">In Progress</span></td>
-                <td>2013/04/15
+                <td>2018/04/15
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                   
@@ -151,7 +200,7 @@
                 <td>Bijay Prakash Awal</td>
 
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>2014/04/25
+                <td>2018/04/25
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                  
@@ -165,25 +214,14 @@
                 <td>Electic Supervisor</td>
                 <td>Nabin Chaulagain</td>
                 <td><span class="badge badge-danger">Pending</span></td>
-                <td>2015/04/25
+                <td>2017/04/25
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
                   
                 </td>
                 <td>N/A</td>
             </tr>
-            <tr>
-              <td>009219</td>
-              <td>Computer Hardware</td>
-              <td>Sambhu Prasad Adhakari</td>
-              <td><span class="badge badge-danger">Pending</span></td>
-              <td>2013/02/13
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-sm" style="float: right">Edit</button>
-                
-              </td>
-              <td>N/A</td>
-            </tr>
+           
 
 
 
@@ -200,68 +238,85 @@
 
         <!-- Footer -->
     <style type="text/css">
-        hr{
-          margin-right:151px;
-          background-color: #fff;
-        }
-      </style>
-      <section id="footer">
-        <div class="container">
-          <div class="row text-center text-xs-center text-sm-left text-md-left">
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <div class="col_one_third">
-                  <div class="widget clearfix">
-                      <h4>Contact Us</h4>
-                      <hr>
-                      <div>
-                        <address>Sajilo Marmat Sewa Pvt. Ltd. Idea Action Buliding, KUSOM Pinchetole, Balkumari, Lalitpur</address>
-                        <abbr title="Phone Number"><strong>Phone:</strong></abbr>
-                        +977-1-5186023                        <br>
-                        <abbr title="Email Address"><strong>Email:</strong></abbr>
-                        info@sajilosewa.com                    
-                      </div>
-                  </div>
-  
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              <h5>Quick links</h5>
-              <ul class="list-unstyled quick-links">
-                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-              </ul>
-            </div>
-  
-            <div class="col-xs-12 col-sm-4 col-md-4">
-              
+      hr{
+        margin-right:151px;
+        background-color: #fff;
+      }
+    </style>
+    <section id="footer">
+      <div class="container">
+      <div class="row" style="margin-bottom: 20px;" >
+          <div class="input-group mb-3" style="width: 40%; margin-left: 31%;">
+            <input type="text" class="form-control" placeholder="random@example.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" style="background-color: #f15b28; color: white;">Subscribe</span></a>
             </div>
           </div>
         </div>
-        <div class="Footer-logo">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 20px !important;">
-                <ul class="list-unstyled list-inline social text-center">
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-              </div>
-            </div>  
-  
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p class="h6">Copyright &copy All right Reversed by<a class="text-green ml-2" href="#" target="_blank">Team Sajilo</a></p>
-              </div>
-            </div>  
+
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col_one_third">
+                <div class="widget clearfix">
+                    <h4>Contact Us</h4>
+                    <hr>
+                    <div>
+                      <address>Sajilo Marmat Sewa Pvt. Ltd. Idea Action Buliding, KUSOM Pinchetole, Balkumari, Lalitpur</address>
+                      <abbr title="Phone Number"><strong>Phone:</strong></abbr>
+                      +977-1-5186023                        <br>
+                      <abbr title="Email Address"><strong>Email:</strong></abbr>
+                      info@sajilosewa.com                    
+                    </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5 style="margin-left: 20%;">Quick links</h5>
+            <ul class="list-unstyled quick-links"style="margin-left: 20%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-xs-12 col-sm-4 col-md-4" >
+            <h5 style="margin-left: 30%;">About</h5>
+            <ul class="list-unstyled quick-links" style="margin-left: 30%;">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>SMS.Inc</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Policies</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Press</a></li>
+            </ul>
+          </div>
+
         </div>
-      </section>
-      
-      <!-- ./Footer -->
+      </div>
+      <div class="Footer-logo">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 20px !important;">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p class="h6">Copyright &copy All right Reversed by<a class="text-green ml-2" href="#" target="_blank">Team Sajilo</a></p>
+            </div>
+          </div>  
+      </div>
+    </section>
+    
+    <!-- ./Footer -->
         
      
 
@@ -271,9 +326,21 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-
+    <script src="javascript/clockface.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="javascript/app.js"></script>
     <script src="js/main.js"></script>
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
+    <script>
+      $(function(){
+        $('.datepicker').datepicker();
+      });
+    </script>
+    <script>
+      $(function(){
+      $('#t1').clockface();  
+  });
+    </script>
+    
   </body>
 </html>

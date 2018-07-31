@@ -266,9 +266,15 @@ $(document).ready(function(){
   });
 });
 
+var date = $('#datepicker').datepicker({ dateFormat: 'dd-mm-yy' }).val();
+
 $( function() {
   $( ".date-picker" ).datepicker();
 } );
+
+// $('#datepicker').datepicker();
+
+
 
 $(window).on('beforeunload', function(){
   // your logic here`enter code here`
