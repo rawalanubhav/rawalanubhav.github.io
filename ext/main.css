@@ -62,7 +62,7 @@ html, body{
 }
 
 .jumbotron{
-  padding-top: 250px;
+  padding-top: 211px;
   height: 450px; 
   background: url('http://sajilosewa.com/wp-content/uploads/2017/12/hero-image.jpg') center center no-repeat; 
   background-size: cover;
@@ -228,7 +228,7 @@ input[type=text] {
 
 #ic-boc{
   box-sizing: border-box;
-  transition: transform .2s;
+  transition: .5s all ease;
 }
 
 .thumbnail:hover{
@@ -236,7 +236,7 @@ input[type=text] {
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2); 
   /*background-color: lightblue;*/
-  cursor: url("https://cdn.emojidex.com/emoji/hdpi/(flat_head)screw_driver.png"), auto;
+  /*cursor: url("https://cdn.emojidex.com/emoji/hdpi/(flat_head)screw_driver.png"), auto;*/
 }
 
 .thumbnail_tech{

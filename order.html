@@ -156,13 +156,14 @@
         <div class="panel">
           <header class="panel__header">
             <h2 class="panel__title"><strong>Choose your Service Type</strong></h2>
+            
             <style type="text/css">
               input[type=radio]{
-              width: 25px;
-              height: 25px;
-              }
-              
+              width: 20px;
+              height: 20px;
+              } 
             </style>
+
           </header>
           
             
@@ -171,7 +172,7 @@
             <div class="row" id="rdo_fill">
               <div class="form-check" style="width: 1170px;">
               
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;margin-top: 8px;">
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Minor Electrical Repair </label>
                 
                 <div class="col-md-12">
@@ -189,7 +190,7 @@
             
             <div class="row" id="rdo_fill">
               <div class="form-check" style="width: 1170px;"> 
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios"  style="width: 50px;margin-top: 8px;">
                 
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">Critical Repairs </label>
 
@@ -208,7 +209,7 @@
 
             <div class="row" id="rdo_fillf">
               <div class="form-check" style="width: 1170px;">
-                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios" style="width: 50px;margin-top: 8px;">
                 <label class="form-check-label" for="materialUnchecked" style="font-size: 1.5em; padding-left: 30px;">New Electrical Installations </label>
 
                 <div class="col-md-12">
@@ -224,8 +225,9 @@
             </div>
 
             <header class="panel__header">
-              <h2 class="panel__title"><strong>Describe Your Problem</strong></h2>
-              <p class="panel__subheading">At least one</p>
+              <p class="panel__title"><strong>Describe Your Problem</strong></p>
+              <p style="font-size: 0.8em; color:grey ">Fill up at least one</p>
+              
             </header>
 
             <div class="upload">
@@ -233,7 +235,7 @@
 
                 <div class="row" style="padding: 5px 0px 35px 0px; text-align: center;">
 
-                  <div class="col-md-3" >
+                  <div class="col-md-3">
                     <img src="img/comnt.png" style="height: 100px; width: 100px;">
                   </div>
 
@@ -317,7 +319,7 @@
                   <div class="input-group mb-3">
                     <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
                     <div class="input-group-append">
-                      <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" data-toggle="modal" data-target="#myModallocation">Locate Me<i class="material-icons">location_on</i></span></a>
+                      <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" data-toggle="modal" data-target="#myModallocation" style="background-color: #17a2b8;color: white;">Locate Me<i class="material-icons">location_on</i></span></a>
                     </div>
                   </div>
 
@@ -337,11 +339,11 @@
               <div class="row" style="width:1313px;; margin-top: 30px;">
 
                 <div class="col-md-5">
-                  <h5>Date</h5>
+                  <h5> Appointment Date</h5>
                 </div>
 
                 <div class="col-md-5" style="margin-left: 55px;">
-                  <h5>Time</h5>
+                  <h5> Appointment Time</h5>
                 </div>
 
               </div>
@@ -392,12 +394,17 @@
 
                     <tr class="info">
                       <td>Location</td>
-                      <td>Crowne Plaza Kathmandu-Soaltee, Tahachal Marg,Kathmandu(Crowne Plaza Kathmandu-Soaltee)</td>
+                      <td>Crowne Plaza Kathmandu-Soaltee, Tahachal Marg,Kathmandu (Crowne Plaza Kathmandu-Soaltee)</td>
                     </tr>
 
                     <tr class="success">
-                      <td>Scheduled Date and Time </td>
+                      <td>Appointed Date and Time </td>
                       <td>2nd July, 2018  11:00 AM</td>
+                    </tr>   
+
+                     <tr class="success">
+                      <td>Comments</td>
+                      <td>My home's lighting system is not working</td>
                     </tr>                    
 
                   </tbody>
@@ -423,7 +430,7 @@
       <p>
         Your Order has been placed. Please confirm your order number <strong style="color: blue;">"008257"</strong> with technician for the verification.
       </p>
-      <a href="pg_extra/index.html"><button class="btn btn-primary">My Bookings</button></a>
+      <a href="pg_extra/index.html"><button class="btn btn-primary" id="book_end">My Bookings</button></a>
     </div>
 
   </div>
@@ -522,6 +529,71 @@
       </div>
     </div>
   </div>
+
+  <!-- Footer -->
+    <style type="text/css">
+      hr{
+        margin-right:151px;
+        background-color: #fff;
+      }
+    </style>
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <div class="col_one_third">
+                <div class="widget clearfix">
+                    <h4>Contact Us</h4>
+                    <hr>
+                    <div>
+                      <address>Sajilo Marmat Sewa Pvt. Ltd. Idea Action Buliding, KUSOM Pinchetole, Balkumari, Lalitpur</address>
+                      <abbr title="Phone Number"><strong>Phone:</strong></abbr>
+                      +977-1-5186023                        <br>
+                      <abbr title="Email Address"><strong>Email:</strong></abbr>
+                      info@sajilosewa.com                    
+                    </div>
+                </div>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            
+          </div>
+        </div>
+      </div>
+      <div class="Footer-logo">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5" style="margin-top: 20px !important;">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>  
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p class="h6">Copyright &copy All right Reversed by<a class="text-green ml-2" href="#" target="_blank">Team Sajilo</a></p>
+            </div>
+          </div>  
+      </div>
+    </section>
+    
+    <!-- ./Footer -->
 
 
 

@@ -276,10 +276,7 @@ $(window).on('beforeunload', function(){
   document.documentElement.scrollTop = 15;
   event.preventDefault();
   $('html','body').animate({scrollTop:0},8000);
-  //return false;
-  $("#book_end").click(function() {
-    return false;
-  });
+  // return false;
 });
 
 
