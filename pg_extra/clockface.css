@@ -232,3 +232,18 @@ table.dataTable.table thead th.sorting, table.dataTable.table thead th.sorting_a
   padding-right: 20px;
   color: #fff;
 }
+
+th.sorting_asc::after{
+  display:none;
+}
+table.dataTable.table thead th.sorting_asc:after, table.dataTable.table thead td.sorting_asc:after {
+  content: "\f0de";
+  display: none !important;
+}
+
+table.dataTable.table thead th.sorting:after, table.dataTable.table thead td.sorting:after {
+  content: "\f0dc";
+  color: #ddd;
+  font-size: 0.8em;
+  display: none !important;
+}
