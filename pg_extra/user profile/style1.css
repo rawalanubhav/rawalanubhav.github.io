@@ -17,6 +17,8 @@ body {
 .profile-sidebar {
   padding: 20px 0 10px 0;
   background: #fff;
+  min-height: 350px;
+
 }
 
 .profile-userpic img {
@@ -109,10 +111,45 @@ body {
 .profile-content {
   padding: 20px;
   background: #fff;
-  min-height: 300px;
+  min-height: 350px;
 }
 
 body {
   padding : 10px ;
 
 }
+
+.form-group {
+    padding-right: 30px;
+    margin-bottom: 2rem;
+    padding-left: 30px;
+    margin-top: 2rem;
+}
+#submit_button{
+  margin-left: 30px;
+}
+#book_now{
+  margin-bottom: 20px;
+}
+.star-rating{
+  text-align: center;
+}
+.heading {
+  font-size: 20px;
+  margin-right: 25px;
+}
+.rate_Detail{
+  margin-bottom: 300px;
+
+}
+.bottom{
+  border-bottom: 1px solid #DBDBDB !important;
+  margin-bottom: 15px;
+}
+.right_float{
+  float: right;
+}
+/* .lft_star{
+  padding: 0; 
+  margin:0;
+} */

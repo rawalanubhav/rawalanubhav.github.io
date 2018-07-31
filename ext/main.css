@@ -3,6 +3,8 @@ html, body{
   -webkit-font-smoothing: antialiased;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .navbar{
@@ -65,6 +67,7 @@ html, body{
   background: url('http://sajilosewa.com/wp-content/uploads/2017/12/hero-image.jpg') center center no-repeat; 
   background-size: cover;
   position: block;
+  margin-bottom: 0;
   
 }
 .jumbotron .container{
@@ -253,13 +256,13 @@ input[type=text] {
   color: #1b1b1b;
   margin-bottom: 6px;
   font-weight: 600;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .job-title{
   font-size: 14px;
   margin-bottom: 11px;
   position: relative;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #646464;
 }
 #nam_but{

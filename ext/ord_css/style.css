@@ -12,6 +12,7 @@ html {
   /*max-width: 2400px;*/
   max-width: 100%;
   margin: 50px auto;
+  background-color: #e7e7e7 !important;
 }
 
 .wizard {
@@ -144,7 +145,7 @@ html {
   left: 0;
   transition: 0.5s all;
   padding: 50px;
-  width: 1400px;
+  width: 1350px;
 }
 .panel__header {
   margin-bottom: 30px;
@@ -322,13 +323,10 @@ html {
   padding-left: 15px;
 }
 
-#row1{
-  padding-bottom: 30px;
-}
-#form-align{
+/*#form-align{
   text-align: center;
   margin-bottom: 25px;
-}
+}*/
 #final_msg {
   text-align: center;
 }
@@ -401,16 +399,20 @@ html {
     position: absolute;
     bottom: 10px;
     left: 0;  pointer-events: none;
-    width: 100%;
+    width: 118%;
     right: 0;
     height: 57px;
     content: " or drag it here. ";
     display: block;
     margin: 0 auto;
-    color: #2ea591;
+    color: #6c7592;
     font-weight: 600;
     text-transform: capitalize;
     text-align: center;
 }
 
 /*upload file finish*/
+
+.form-control.txt_field{
+  background-color: white;
+}

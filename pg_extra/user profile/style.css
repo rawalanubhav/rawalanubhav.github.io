@@ -65,3 +65,29 @@ body{
     left: 0;
     z-index: 1030;
 }
+
+#table_list{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.pb-cmnt-textarea {
+
+        padding: 20px;
+        height: 130px;
+        width: 100%;
+        border: 1px solid #F2F2F2;
+    }
+
+    .checked {
+        color: orange;
+    }
+
+    #comment{
+      padding-left:30px;
+    }

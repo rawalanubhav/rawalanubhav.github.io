@@ -239,7 +239,7 @@
 
                   
 
-                  <div class="col-md-4" style="width: 75%" >
+                  <div class="col-md-4" style="width: 75%; margin-left: 4.5vw;" >
                     <img src="img/upload.png" style="height: 100px; width: 100px;">
                   </div>
                   
@@ -263,7 +263,7 @@
                   
                 </div> -->
 
-                <div class="col-md-3" style="margin-left: 3vw; width: 75%"> 
+                <div class="col-md-3" style="margin-left: 6.5vw; width: 75%"> 
 
                   <form method="post" action="#" id="#" >
                     <div class="form-group files">
@@ -276,7 +276,7 @@
                   
                 </div> -->
 
-                <div class="col-md-4" style="margin-left: 1.4vw;">
+                <div class="col-md-4" style="margin-left: 2.2vw;">
                   <h2 style="font-size:55px; margin-bottom: 0px; color: #777373;">00:00</h2>
                   <br>
                   <button type="button" class="btn btn-danger">Record</button>
@@ -290,51 +290,6 @@
 
           </div>
 
-        <!-- <div class="panel">
-           <header class="panel__header">
-              <h2 class="panel__title">Details about your Problem</h2>
-              <p class="panel__subheading">Please fill up at least one</p>
-           </header>
-
-              <div class="upload">
-                <div class "container">
-
-                  <div class="row" style="padding: 5px 5px 35px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-commenting" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Please tell us more about your problem here..."></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row" style="padding: 5px 5px 35px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-photo" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6" style="text-align: left;">
-                      <form action="upload.php" method="post" enctype="multipart/form-data">
-                        <input type="file" name="file">
-                        <button type="button" class="btn btn-primary">Upload</button>
-                      </form>
-                    </div>
-                  </div>
-
-                  <div class="row" style="padding: 15px 15px 25px 20px;">
-                    <div class="col-md-3">
-                      <i class="fa fa-microphone" style="font-size: 60px"></i>
-                    </div>
-                    <div class="col-md-6" style="text-align: left;">
-                      <button type="button" class="btn btn-danger">Record</button>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-        </div> -->
-
         <div class="panel">
            <header class="panel__header">
               <h2 class="panel__title">Schedule your Service</h2>
@@ -343,38 +298,70 @@
             <div class "container-fluid">
               
 
-              <div class="row" id="row2">
-                <div class="col-md-3">
+              <div class="row" style="width: 1300px;">
+                <div class="col-md-5">
                   <h5>Location</h5>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group" id="form-align">
-                    
-                    <div class="input-group date" style="width: 741px;">
-                      <input type="text" class="form-control" id ="addrs" name="House No." placeholder="House No./StreetAddress">
-                        <div class="input-group-text" style="padding: 0; margin: 0; border-width: 0;"><button type="button" class="btn btn-primary" id="loc" data-toggle="modal" data-target="#myModallocation">My Location<i class="material-icons">location_on</i></button></div>
-                    </div>
-
-                    <input type="text" class="form-control" id="city" name="City" placeholder="City">
-                    <input type="text" class="form-control" id="lndmrk" name="Landmark" placeholder="Landmark">
-
-                    
-
-                  </div>
                 </div>
               </div>
 
-              <div class="row" id="row1">
-                <div class="col-md-3">
-                  <h5>Date and Time</h5>
-                </div>
-                <div class="col-md-7" style="max-width: 741px;">
-                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM">
-                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+              <div class="row" style="width: 1313px;">
+                <div class="col-md-11">
+                 <!--  <div class="input-group date" style="width: 104%;">
+                    <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                      
+                      <div class="input-group-text" style="position: absolute; float: right; padding: 0; margin: 0; border-width: 0;">
+                      <button type="button" class="btn btn-primary" ></button>
+                      <! </div>
+                  </div> --> 
+
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                    <div class="input-group-append">
+                      <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" data-toggle="modal" data-target="#myModallocation">Locate Me<i class="material-icons">location_on</i></span></a>
                     </div>
                   </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-5" >
+                  <input type="text" class="form-control txt_field" id="city" name="City" placeholder="City" style="width: 549px;">
+                </div>
+                <div class="col-md-5">
+                  <input type="text" class="form-control txt_field" id="lndmrk" name="Landmark" placeholder="Landmark" style="margin-left: 28px;width: 546px;">
+                </div>
+              </div>
+                    
+
+              <div class="row" style="width:1313px;; margin-top: 30px;">
+
+                <div class="col-md-5">
+                  <h5>Date</h5>
+                </div>
+
+                <div class="col-md-5" style="margin-left: 55px;">
+                  <h5>Time</h5>
+                </div>
+
+              </div>
+
+              <div class="row" style="width: 1313px; margin-bottom: 30px;">
+
+                <div class="col-md-5" >
+                  <!-- <input type="date" class="form-control txt_field" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"> -->
+
+                  <input type="date" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}" required="" value=""  / >
+                  <!-- <div class="well">
+                    <input type="text" class="form-control txt_field date-picker" name="date" placeholder="Select Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" data-date-format="dd/mm/yyyy" id="dp2" required="">
+                  </div> -->
+
+                  <!-- <input type="text" class="form-control  date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
+ -->
+                </div>
+                
+                <div class="col-md-5" style="margin-left: 55px;" >
+                  <input type="text" class="form-control txt_field" placeholder="hh:mm">
                 </div>
               </div>
 
@@ -405,7 +392,7 @@
 
                     <tr class="info">
                       <td>Location</td>
-                      <td>Himalaya Hotel, Kupondole</td>
+                      <td>Crowne Plaza Kathmandu-Soaltee, Tahachal Marg,Kathmandu(Crowne Plaza Kathmandu-Soaltee)</td>
                     </tr>
 
                     <tr class="success">
@@ -417,7 +404,7 @@
                 </table>
               </div>
             </div>
-            <p style="color: red; text-align: center; font-size: 20px;">
+            <p style="color: red; text-align: center; font-size: 20px; width: 1350px;">
               <STRONG>Note: The cost estimation and technician details will be sent with an hour.</STRONG>
             </p>
 
@@ -513,12 +500,24 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <img src="img/map.png" style="height: 60vh; width: 57vw">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+          
+          <script>
+          function myMap() {
+          var mapProp= {
+              center:new google.maps.LatLng(27.7007,85.2911),
+              zoom:20,
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoKTYicpFD5SEQL-ywhq7mpMkM-jZXmFw&callback=myMap"></script>
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="myModallocation">OK</button>
+          <button type="button" class="btn btn-secondary" id="loc" data-dismiss="modal" data-toggle="modal" data-target="myModallocation">OK</button>
         </div>
       </div>
     </div>
@@ -535,6 +534,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
+  <script src="ext/bootstrap-datepicker.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
   <script src="ext/main.js"></script>
   <script  src="ext/ord_js/index.js"></script>
