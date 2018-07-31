@@ -36,7 +36,7 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -46,7 +46,7 @@
                 <a class="nav-link" href="pg_extra/index.html">My Bookings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user">Ramesh</i></a>
+                <a class="nav-link" href="#"><i class="fas fa-user" style="margin-right: 2px;">John Doe</i></a>
               </li>
             </ul>
           </div>  
@@ -366,7 +366,12 @@
                 </div>
                 
                 <div class="col-md-5" style="margin-left: 55px;" >
-                  <input type="text" class="form-control txt_field" placeholder="hh:mm">
+                  <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                    <input type="text" class="form-control txt_field datetimepicker-input" data-target="#datetimepicker3" placeholder="hh:mm"/>
+                    <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                      <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -414,7 +419,7 @@
                 </table>
               </div>
             </div>
-            <p style="color: red; text-align: center; font-size: 20px; width: 1350px;">
+            <p style="color: red; text-align: center; font-size: 20px; width: 1320px;">
               <STRONG>Note: The cost estimation and technician details will be sent within an hour.</STRONG>
             </p>
 

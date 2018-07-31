@@ -227,3 +227,8 @@
   outline: thin dotted \9;
   /* IE6-9 */
 }
+
+table.dataTable.table thead th.sorting, table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
+  padding-right: 20px;
+  color: #fff;
+}
