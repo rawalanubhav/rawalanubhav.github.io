@@ -108,98 +108,90 @@
       
                             </div>
                             <div class="modal-body">
-                                <div class "container-fluid">
-              
-
-                                    <div class="row" style="width: 100%;">
-                                      <div class="col-md-5">
-                                        <h5>Location</h5>
+                                <div class="row" id="row1">
+                                    <div class="col-md-3">
+                                        <h5>Address:</h5>
                                       </div>
-                                    </div>
-                      
-                                    <div class="row" style="width: 100%;">
-                                      <div class="col-md-8">
-                                       <!--  <div class="input-group date" style="width: 104%;">
-                                          <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
+                                    <div class="col-md-7">
+                                        
+                                        <div class="input-group date" data-target-input="nearest">
+                                            <input type="text" class="form-control input-small" id="#loc" placeholder="Crowne Plaza Kathmandu-Soaltee, Tahachal Marg"  >
+                                            <span class="input-group-text"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
                                             
-                                            <div class="input-group-text" style="position: absolute; float: right; padding: 0; margin: 0; border-width: 0;">
-                                            <button type="button" class="btn btn-primary" ></button>
-                                            <! </div>
-                                        </div> --> 
-                      
-                                        <div class="input-group mb-3">
-                                          <input type="text" class="form-control txt_field" id ="addrs" name="House No." placeholder="House No./StreetAddress">
-                                          <div class="input-group-append">
-                                            <a href="javascript:void(0);" style="text-decoration: none;"><span class="input-group-text" id="basic-addon2" data-toggle="modal" data-target="#myModallocation" style="background-color: #17a2b8;color: white;">Locate Me<i class="material-icons">location_on</i></span></a>
-                                          </div>
                                         </div>
-                      
-                                      </div>
+                                        <div class="input-group date" data-target-input="nearest">
+                                           
+                                            <input type="text" class="form-control input-small" placeholder="Crowne Plaza Kathmandu"  >
+                                            
+                                            
+                                        </div>
+                                        <div class="input-group date" data-target-input="nearest">
+                                           
+                                            <input type="text" class="form-control input-small" placeholder="Kathmandu"  >
+                                            
+                                            
+                                        </div>
+                                       </div>
+                                       
+                                       
+                                       
+                                    <div class="col-md-3">
+                                      <h5>Date:</h5>
                                     </div>
-                      
-                                    <!-- <div class="row"> -->
-                                      <div class="col-md-4" >
-                                        <input type="text" class="form-control txt_field" id="city" name="City" placeholder="City" style="width: 549px;">
-                                      </div>
-                                      <div class="col-md-4">
-                                        <input type="text" class="form-control txt_field" id="lndmrk" name="Landmark" placeholder="Landmark" style="margin-left: 28px;width: 546px;">
-                                      </div>
-                                    <!-- </div> -->
+                                    <div class="col-md-7">
+                                      <div class="input-group date" id="datetimepicker" data-target-input="nearest">
+                                          <input class="datepicker" type="text" name="date" placeholder="MM/DD/YYYY"> 
                                           
-                      
-                                    <!-- <div class="row" style="width:1313px;; margin-top: 30px;"> -->
-                      
-                                      <div class="col-md-4">
-                                        <h5> Appointment Date</h5>
-                                      </div>
-                      
-                                      <div class="col-md-4" style="margin-left: 55px;">
-                                        <h5> Appointment Time</h5>
-                                      </div>
-                      
-                                    <!-- </div> -->
-                      
-                                    <!-- <div class="row" style="width: 1313px; margin-bottom: 30px;"> -->
-                      
-                                      <div class="col-md-5" >
-                                        <!-- <input type="date" class="form-control txt_field" data-target="#datetimepicker1" placeholder="MM/DD/YYYY HH:MM" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"> -->
-                      
-                                        <!-- <input type="date" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'mm/dd/yyyy'" data-date-format="mm/dd/yyyy" required="" value=""  / > -->
-                                        <!-- <div class="well">
-                                          <input type="text" class="form-control txt_field date-picker" name="date" placeholder="Select Date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date'" data-date-format="dd/mm/yyyy" id="dp2" required="">
-                                        </div> -->
-                      
-                                        <!-- <input type="text" class="form-control  date-picker" name="date" placeholder="Select Date & time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required=""> -->
-                      
-                      
-                                        <div id="datepicker">
-                                          <input type="text" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
-                                        </div>
                                       </div>
                                       
-                                      <div class="col-md-5" style="margin-left: 55px;" >
-                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                          <input type="text" class="form-control txt_field datetimepicker-input" data-target="#datetimepicker3" placeholder="hh:mm"/>
-                                          <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                          </div>
-                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5>Time:</h5>
                                       </div>
-                                    <!-- </div> -->
-                      
+                                    <div class="col-md-7">
+                                        
+                                        <div class="input-group date" id="time_edit" data-target-input="nearest">
+                                           
+                                            <input type="text" value="11:00 AM" class="form-control " placeholder="11:00 AM" >
+                                            
+                                        </div>
+                                       </div>
+                                       <div class="col-md-3">
+                                        <h5>Message:</h5>
+                                      </div>
+                                       <div class="form-group">
+                                        
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" cols="45"></textarea>
+                                      </div>
+                                    
                                   </div>
-                                
                               
                               
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">Ok</button>
                             </div>
                            </div>
                           </div>
                         </div>
                   <!-- Modals -->
-                  
+
+                  <!-- Trigger the modal with a button -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal1" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h3> Are you sure you want to edit? </h3>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" data-dismiss="modal" onclick="conform()">Yes</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </td>
                 <td>Estimate: Rs 125</td>
             </tr>
@@ -465,8 +457,25 @@
     </script>
     <script>
       $(function(){
-      $('#t1').clockface();  
-  });
+      $('#t1').clockface();
+      
+      $(document).ready(function(){
+          $("#loc").click(function(){
+            var input1 = $('#addrs');
+            var input2 = $('#city');
+            var input3 = $('#lndmrk');
+            input1.val('Crowne Plaza Kathmandu-Soaltee, Tahachal Marg');
+            input2.val('Kathmandu');
+            input3.val('Crowne Plaza Kathmandu-Soaltee');
+          });
+        });
+      });
+      
+      function conform(){
+        location.reload();
+      }
+
+
     </script>
     
   </body>
