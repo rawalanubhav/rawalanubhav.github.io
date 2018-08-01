@@ -415,3 +415,10 @@ html {
 .form-control.txt_field{
   background-color: white;
 }
+
+.panels.long{
+  height: 579px !important;
+}
+.panel.movingIn.long{
+  height
+}

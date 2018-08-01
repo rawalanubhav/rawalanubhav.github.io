@@ -406,3 +406,7 @@ section .section-title {
 }
 
 /*End-Card*/
+
+.panels .long{
+  height: 579px !important;
+}

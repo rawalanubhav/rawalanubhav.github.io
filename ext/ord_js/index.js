@@ -290,3 +290,20 @@ $("#book_end").on('click',function() {
     location.reload();
     console.log('hello');
 });
+
+$( "#time_resize" ).click(function() {
+  $(".panels").addClass("long");
+  $(".panel.movingIn").addClass("long");
+
+  $("#p_button").on('click',function() {
+    $(".panels").removeClass("long");
+    $(".panel.movingIn").removeClass("long");
+  });
+
+  $("#n_button").on('click',function() {
+    $(".panels").removeClass("long");
+    $(".panel.movingIn").removeClass("long");
+  });
+
+  console.log('Hello');
+});

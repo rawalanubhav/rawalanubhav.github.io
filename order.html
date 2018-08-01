@@ -46,7 +46,7 @@
                 <a class="nav-link" href="pg_extra/index.html">My Bookings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-user" style="margin-right: 2px;">John Doe</i></a>
+                <a class="nav-link" href="#"><i class="fas fa-user"></i> Anubhav Rawal</a>
               </li>
             </ul>
           </div>  
@@ -291,7 +291,7 @@
 
           </div>
 
-        <div class="panel">
+        <div class="panel" style="overflow-y: scroll;">
            <header class="panel__header">
               <h2 class="panel__title">Schedule your Service</h2>
            </header>
@@ -364,12 +364,16 @@
                     <input type="text" class="form-control txt_field date-picker" name="date" placeholder="mm/dd/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Date & time'" required="">
                   </div>
                 </div>
-                
+                <style type="text/css">
+                .fa-clock-o:after{
+                  z-index: 9999;
+                }
+                </style>
                 <div class="col-md-5" style="margin-left: 55px;" >
                   <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
                     <input type="text" class="form-control txt_field datetimepicker-input" data-target="#datetimepicker3" placeholder="hh:mm"/>
                     <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                      <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                      <div class="input-group-text" id="time_resize"><i class="fa fa-clock-o"></i></div>
                     </div>
                   </div>
                 </div>
@@ -428,7 +432,7 @@
       </div>
 
       <div class="wizard__footer">
-      <button class="button previous" onclick="topFunction()">Previous</button>
+      <button class="button previous" id="p_button" onclick="topFunction()">Previous</button>
       <button class="button next" id= "n_button" onclick="topFunction()" style="float: right;">Next</button>
     </div>
     </div>

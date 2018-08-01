@@ -1,75 +1,72 @@
-body{
-    /*background-color:#efefef;*/
-    -webkit-font-smoothing: antialiased;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  .navbar{
-  
-    margin-bottom: 0;
-    border-radius: 0;
-    background-color: #f4f4f4 !important;
-    color: #f15b28 !important;
-    padding: 1% 0;
-    font-size: 1.2em;
-    border:0 !important;
-    padding-left: 100px;
-    padding-right: 50px;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-  
-  }
-  .navbar-brand{
-    float: left;
-    min-height: 30px;
-    padding: 0 5px 3px !important ;
-    padding-left: 100px;
-    padding-right: 50px;
-  }
-  /* .navbar.navbar-no-bg {
-    background: #444;
-    background: rgba(0, 0, 0, 0.2);
-  }*/
-  
-  .navbar-light .navbar-nav {
-    font-size: 15px;
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  .navbar-light .navbar-nav .active .nav-link {
-    color: #f15b28;
-  }
-  
-  .navbar-light .navbar-nav .nav-link {
-    color: black;
-    /*color: rgba(255, 255, 255, 0.8);*/
-    border: 0;
-  }
-  
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #f15b28;
-  }
-  
-  .navbar-light .navbar-nav .nav-link:focus {
-    color: #f15b28;
-    outline: 0;
-  }
-  
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .fixed-top {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1030;
-  }
+html, body{
+  /*background-color:#efefef;*/
+  -webkit-font-smoothing: antialiased;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* ========== Top Navigation ========== */
+.top-nav {
+  background: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.23);
+  height: 80px;
+  transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+.top-nav .navbar-nav li .nav-link {
+  color: #212121;
+  font-size: 14px;
+  padding:29px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+.top-nav li a.nav-link:hover, .top-nav .nav-item.active a.nav-link{
+  border-bottom: 3px solid #35cbdf;
+  color: #35cbdf;
+  transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+.top-nav .navbar-brand{
+font-size: 28px;
+color: #212121;
+font-family: 'Montserrat', sans-serif;
+}
+.top-nav.light-header{
+height: 60px;
+background: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.23);
+transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+.top-nav.light-header .navbar-brand{
+color: #212121;
+}
+.top-nav.light-header .navbar-nav li .nav-link {
+  color: #212121;
+  padding: 19px 15px;
+  transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+
+.top-nav.light-header li a.nav-link:hover, .top-nav.light-header .nav-item.active a.nav-link{
+border-bottom: 3px solid #35cbdf;
+  color: #35cbdf;
+  transition: 0.5s ease-in;
+-webkit-transition: 0.5s ease-in;
+-moz-transition: 0.5s ease-in;
+}
+
+/*Nav-bar-End*/
 
   /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -157,4 +154,14 @@ section .section-title {
 
 .Footer-logo{
   background-color: #0e3c5a;
+}
+
+
+.footer > h4 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
 }
