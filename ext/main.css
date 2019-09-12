@@ -71,7 +71,7 @@ border-bottom: 3px solid #35cbdf;
 .jumbotron{
   padding-top: 211px;
   height: 450px; 
-  background: url('http://sajilosewa.com/wp-content/uploads/2017/12/hero-image.jpg') center center no-repeat; 
+  background: url('../img/hero-image.jpg') center center no-repeat; 
   background-size: cover;
   position: block;
   margin-bottom: 0;
@@ -302,7 +302,7 @@ section .section-title {
 }
 #footer {
     /*background: #114b71 !important;*/
-    background-image: url("https://www.appnovation.com/sites/default/files/2016-12/formbg.gif") !important ;
+    background-image: url("../img/formbg.gif") !important ;
 }
 #footer h5{
   padding-left: 10px;
